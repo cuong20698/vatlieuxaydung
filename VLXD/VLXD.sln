@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLXD", "VLXD\VLXD.csproj", "{079D0F84-00EB-40CA-A7B8-24F84FA20CD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLXD.Tests", "VLXD.Tests\VLXD.Tests.csproj", "{5C6F8427-F4C4-4722-91D8-361B51F42D3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{079D0F84-00EB-40CA-A7B8-24F84FA20CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079D0F84-00EB-40CA-A7B8-24F84FA20CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079D0F84-00EB-40CA-A7B8-24F84FA20CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079D0F84-00EB-40CA-A7B8-24F84FA20CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C6F8427-F4C4-4722-91D8-361B51F42D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C6F8427-F4C4-4722-91D8-361B51F42D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C6F8427-F4C4-4722-91D8-361B51F42D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C6F8427-F4C4-4722-91D8-361B51F42D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
