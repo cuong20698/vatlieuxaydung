@@ -18,10 +18,31 @@ namespace VLXD.Admin
             loadTrang(modul1);
         }
 
-        private void loadTrang(string modul) {
-            switch (modul) {
+        private void loadTrang(string modul1) {
+            switch (modul1) {
+                case "TK":
+                    PlaceHolder1.Controls.Add(LoadControl("TaiKhoan/ChiTietTaiKhoan.ascx"));
+                    break;
                 case "DSTK":
                     PlaceHolder1.Controls.Add(LoadControl("TaiKhoan/DanhSachTaiKhoan.ascx"));
+                    break;
+                case "DoiMK":
+                    PlaceHolder1.Controls.Add(LoadControl("TaiKhoan/DoiMatKhau.ascx"));
+                    break;
+                case "DMSP":
+                    PlaceHolder1.Controls.Add(LoadControl("SanPham/DanhSachLoai.ascx"));
+                    break;
+                case "DSSP":
+                    PlaceHolder1.Controls.Add(LoadControl("SanPham/DanhSachSanPham.ascx"));
+                    break;
+                case "ThemSP":
+                    PlaceHolder1.Controls.Add(LoadControl("SanPham/ThemSP.ascx"));
+                    break;
+                case "DSKH":
+                    PlaceHolder1.Controls.Add(LoadControl("KhachHang/DanhSachKH.ascx"));
+                    break;
+                case "DSDH":
+                    PlaceHolder1.Controls.Add(LoadControl("KhachHang/DanhSachDH.ascx"));
                     break;
             }
         }

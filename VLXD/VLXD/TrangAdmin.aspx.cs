@@ -16,7 +16,7 @@ namespace VLXD
             loadLink2();
         }
 
-        public void loadLink1() {
+        private void loadLink1() {
             string modul = "";
             if (Request.QueryString["modul"] != null)
             {
@@ -27,29 +27,74 @@ namespace VLXD
                 case "TaiKhoan":
                     lblLink.Text = "Tài khoản";
                     break;
-            };
-        }
-
-        public void loadLink2()
-        {
-            string modul1 = "";
-            if (Request.QueryString["modul1"] != null)
-            {
-                
-                modul1 = Request.QueryString["modul1"];
-            }
-            switch (modul1)
-            {
-                case "DSTK":
-                    lblLink2.Text = "Danh sách tài khoản";
+                case "SanPham":
+                    lblLink.Text = "Sản phẩm";
+                    break;
+                case "KhachHang":
+                    lblLink.Text = "Khách hàng";
                     break;
             };
         }
 
-        public void checkSession() {
+        private void loadLink2()
+        {
+            string modul1 = "";
+            if (Request.QueryString["modul1"] != null)
+            {
+                modul1 = Request.QueryString["modul1"];
+            }
+            switch (modul1)
+            {
+                case "TK":
+                    lblLink2.Text = "Chi tiết tài khoản";
+                    break;
+                case "DSTK":
+                    lblLink2.Text = "Danh sách tài khoản";
+                    break;
+                case "DoiMK":
+                    lblLink2.Text = "Đổi mật khẩu";
+                    break;
+                case "ThemLoaiSP":
+                    lblLink2.Text = "Thêm loại sản phẩm";
+                    break;
+                case "DMSP":
+                    lblLink2.Text = "Danh sách loại sản phẩm";
+                    break;
+                case "DSSP":
+                    lblLink2.Text = "Danh sách sản phẩm";
+                    break;
+                case "ThemSP":
+                    lblLink2.Text = "Thêm sản phẩm";
+                    break;
+                case "DSKH":
+                    lblLink2.Text = "Danh sách khách hàng";
+                    break;
+                case "DSDH":
+                    lblLink2.Text = "Danh sách đơn hàng";
+                    break;
+            };
+        }
+
+        private void checkSession() {
             if (Session["username"] == null) {
                 Response.Redirect("Login.aspx");
             }
+        }
+
+        private void XoaCookie() {
+            Session.Remove("username");
+            HttpCookie c1 = new HttpCookie("username");
+            HttpCookie c2 = new HttpCookie("password");
+            c1.Expires = DateTime.Now.AddDays(-1);
+            c2.Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies.Add(c1);
+            Response.Cookies.Add(c2);
+            Response.Redirect("TrangAdmin.aspx");
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            XoaCookie();
         }
     }
 }

@@ -94,10 +94,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\KhachHang\DanhSachDH.ascx" />
+    <Content Include="Admin\KhachHang\DanhSachKH.ascx" />
+    <Content Include="Admin\SanPham\DanhSachLoai.ascx" />
+    <Content Include="Admin\SanPham\DanhSachSanPham.ascx" />
+    <Content Include="Admin\SanPham\ThemSP.ascx" />
     <Content Include="Admin\TaiKhoan\ChinhSuaTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\ChiTietTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
+    <Content Include="DangKy.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -196,6 +202,7 @@
     <Content Include="css\Admin\vendor\bootstrap\scss\_type.scss" />
     <Content Include="css\Admin\vendor\bootstrap\scss\_utilities.scss" />
     <Content Include="css\Admin\vendor\bootstrap\scss\_variables.scss" />
+    <Content Include="QuenMK.aspx" />
     <Content Include="TrangAdmin.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -219,6 +226,41 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\KhachHang\DanhSachDH.ascx.cs">
+      <DependentUpon>DanhSachDH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KhachHang\DanhSachDH.ascx.designer.cs">
+      <DependentUpon>DanhSachDH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KhachHang\DanhSachKH.ascx.cs">
+      <DependentUpon>DanhSachKH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KhachHang\DanhSachKH.ascx.designer.cs">
+      <DependentUpon>DanhSachKH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SanPham\DanhSachLoai.ascx.cs">
+      <DependentUpon>DanhSachLoai.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SanPham\DanhSachLoai.ascx.designer.cs">
+      <DependentUpon>DanhSachLoai.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SanPham\DanhSachSanPham.ascx.cs">
+      <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SanPham\DanhSachSanPham.ascx.designer.cs">
+      <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SanPham\ThemSP.ascx.cs">
+      <DependentUpon>ThemSP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SanPham\ThemSP.ascx.designer.cs">
+      <DependentUpon>ThemSP.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\TaiKhoan\ChinhSuaTaiKhoan.ascx.cs">
       <DependentUpon>ChinhSuaTaiKhoan.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -254,6 +296,15 @@
     <Compile Include="Admin\WebUserControl1.ascx.designer.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
+    <Compile Include="DangKy.aspx.cs">
+      <DependentUpon>DangKy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKy.aspx.designer.cs">
+      <DependentUpon>DangKy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\DanhMucSPDAO.cs" />
+    <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\XuLy.cs" />
     <Compile Include="Entity\ChiTietGioHang.cs" />
@@ -271,6 +322,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuenMK.aspx.cs">
+      <DependentUpon>QuenMK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuenMK.aspx.designer.cs">
+      <DependentUpon>QuenMK.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TrangAdmin.aspx.cs">
       <DependentUpon>TrangAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,8 +339,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\DoanhThu\" />
-    <Folder Include="Admin\KhachHang\" />
-    <Folder Include="Admin\SanPham\" />
     <Folder Include="BanHang\" />
     <Folder Include="css\Admin\js\" />
     <Folder Include="css\Admin\scss\" />

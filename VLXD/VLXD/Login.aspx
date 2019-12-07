@@ -43,7 +43,8 @@
                     <div class="form-group">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="remember-me">
+                               
+                                <asp:CheckBox ID="chkNhoMK" runat="server" value="remember-me"/>
                                 Nhớ mật khẩu
              
                             </label>
@@ -55,8 +56,8 @@
                 </form>
                  <asp:Label ID="lblTB" runat="server" Text=""></asp:Label>
                 <div class="text-center">
-                    <a class="d-block small mt-3" href="register.html">Tạo một tài khoản mới</a>
-                    <a class="d-block small" href="forgot-password.html">Quên mật khẩu?</a>
+                    <a class="d-block small mt-3" href="/DangKy.aspx">Tạo một tài khoản mới</a>
+                    <a class="d-block small" href="/QuenMK.aspx">Quên mật khẩu?</a>
                 </div>
                 
             </div>

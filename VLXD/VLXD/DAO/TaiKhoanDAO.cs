@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using VLXD.Entity;
 
 namespace VLXD.DAO
 {
@@ -56,10 +57,18 @@ namespace VLXD.DAO
             }
         }
 
-        public bool insert()
+        public bool insert(NguoiDung nd)
         {
-            throw new NotImplementedException();
+            string query = @"INSERT INTO NguoiDung VALUES('"+nd.userName+"','"+nd.passWord+"',N'"
+                +nd.hoTen+"','"+nd.email+"','"+nd.diaChi+"','"+nd.sdt+"','"+nd.idGroup+"')";
+            using (SqlConnection conn = new SqlConnection(connectString)) {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int result = cmd.ExecuteNonQuery();
+                return (result >= 1);
+            }
         }
+
         public bool update(long id)
         {
             throw new NotImplementedException();

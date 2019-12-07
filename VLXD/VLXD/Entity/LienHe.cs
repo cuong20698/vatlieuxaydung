@@ -7,13 +7,13 @@ namespace VLXD.Entity
 {
     public class LienHe
     {
-        private string tenCty { get; set; }
-        private string moTa { get; set; }
-        private string diaChi { get; set; }
-        private string tel { get; set; }
-        private string fax { get; set; }
-        private string hotLine { get; set; }
-        private string email { get; set; }
+        public string tenCty { get; set; }
+        public string moTa { get; set; }
+        public string diaChi { get; set; }
+        public string tel { get; set; }
+        public string fax { get; set; }
+        public string hotLine { get; set; }
+        public string email { get; set; }
 
         public LienHe(string tenCty, string moTa, string diaChi, string tel, string fax, string hotLine, string mail) {
             this.tenCty = tenCty;

@@ -77,10 +77,13 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                     <a class="dropdown-item" href="#">Cài đặt</a>
-                    <a class="dropdown-item" href="#">Đăng ký</a>
+                    <a class="dropdown-item" href="/DangKy.aspx">Đăng ký</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Đăng xuất</a>
-                </div>
+                    <%--<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Đăng xuất</a>--%>
+                    <form runat="server">
+                    <asp:Button class="dropdown-item" ID="btnLogout" runat="server" data-toggle="modal" data-target="#logoutModal" Text="Đăng xuất" OnClick="btnLogout_Click"/>
+                    </form>
+                   </div>
             </li>
         </ul>
     </nav>
@@ -95,8 +98,8 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <h6 class="dropdown-header">Hồ sơ cá nhân:</h6>
-                    <a class="dropdown-item" href="login.html">Tài khoản</a>
-                    <a class="dropdown-item" href="404.html">Đổi mật khẩu</a>
+                    <a class="dropdown-item" href="TrangAdmin.aspx?modul=TaiKhoan&modul1=TK">Tài khoản</a>
+                    <a class="dropdown-item" href="TrangAdmin.aspx?modul=TaiKhoan&modul1=DoiMK">Đổi mật khẩu</a>
                     <div class="dropdown-divider"></div>
                     <h6 class="dropdown-header">Danh mục tài khoản:</h6>
                     <a class="dropdown-item" href="TrangAdmin.aspx?modul=TaiKhoan&modul1=DSTK">Danh sách tài khoản</a>
@@ -109,11 +112,12 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <h6 class="dropdown-header">Danh mục loại:</h6>
-                    <a class="dropdown-item" href="login.html">Danh sách loại SP</a>
+                    <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=ThemLoaiSP">Thêm loại SP</a>
+                    <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=DMSP">Danh sách loại SP</a>
                     <div class="dropdown-divider"></div>
                     <h6 class="dropdown-header">Danh mục sản phẩm:</h6>
-                    <a class="dropdown-item" href="login.html">Danh sách sản phẩm</a>
-                    <a class="dropdown-item" href="register.html">Thêm sản phẩm</a>
+                    <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=DSSP">Danh sách sản phẩm</a>
+                    <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=ThemSP">Thêm sản phẩm</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -123,10 +127,10 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <h6 class="dropdown-header">Danh mục khách hàng:</h6>
-                    <a class="dropdown-item" href="login.html">Danh sách khách hàng</a>
+                    <a class="dropdown-item" href="TrangAdmin.aspx?modul=KhachHang&modul1=DSKH">Danh sách khách hàng</a>
                     <div class="dropdown-divider"></div>
                     <h6 class="dropdown-header">Danh mục đơn hàng:</h6>
-                    <a class="dropdown-item" href="login.html">Danh sách đơn hàng</a>
+                    <a class="dropdown-item" href="TrangAdmin.aspx?modul=KhachHang&modul1=DSDH">Danh sách đơn hàng</a>
                 </div>
             </li>
             <li class="nav-item dropdown">

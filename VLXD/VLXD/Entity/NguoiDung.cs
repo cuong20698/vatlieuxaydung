@@ -7,16 +7,18 @@ namespace VLXD.Entity
 {
     public class NguoiDung
     {
-        private string userName { get; set; }
-        private string passWord { get; set; }
-        private string email { get; set; }
-        private string diaChi { get; set; }
-        private string sdt { get; set; }
-        private int idGroup { get; set; }
+        public string userName { get; set; }
+        public string passWord { get; set; }
+        public string hoTen { get; set; }
+        public string email { get; set; }
+        public string diaChi { get; set; }
+        public string sdt { get; set; }
+        public int idGroup { get; set; }
 
-        public NguoiDung(string userName, string passWord, string email, string diaChi, string sdt, int idGroup) {
+        public NguoiDung(string userName, string passWord, string hoTen, string email, string diaChi, string sdt, int idGroup) {
             this.userName = userName;
             this.passWord = passWord;
+            this.hoTen = hoTen;
             this.email = email;
             this.diaChi = diaChi;
             this.sdt = sdt;
