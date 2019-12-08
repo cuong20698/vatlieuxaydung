@@ -18,7 +18,7 @@ namespace VLXD.Admin.SanPham
         }
 
         private void loadSP() {
-            XuLy tkDao = new SanPhamDAO();
+            SanPhamDAO tkDao = new SanPhamDAO();
             DataTable dt = tkDao.getTable();
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < dt.Rows.Count; i++)

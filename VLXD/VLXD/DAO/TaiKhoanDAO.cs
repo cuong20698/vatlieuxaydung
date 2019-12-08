@@ -9,7 +9,7 @@ using VLXD.Entity;
 
 namespace VLXD.DAO
 {
-    public class TaiKhoanDAO : XuLy
+    public class TaiKhoanDAO
     {
         private string connectString = ConfigurationManager.ConnectionStrings["MyShop"].ConnectionString;
         public TaiKhoanDAO() { }

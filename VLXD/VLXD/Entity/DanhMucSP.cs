@@ -7,7 +7,7 @@ namespace VLXD.Entity
 {
     public class DanhMucSP
     {
-        public string name { get; set; }
+        public string name{ get; set; }
 
         public DanhMucSP(string name) {
             this.name = name;

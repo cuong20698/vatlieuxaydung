@@ -103,8 +103,11 @@
     <Content Include="Admin\TaiKhoan\ChiTietTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
+    <Content Include="css\Admin\css\ThemSP.css" />
+    <Content Include="css\Admin\vendor\datatables\dataTables.bootstrap4.css" />
     <Content Include="DangKy.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -306,7 +309,6 @@
     <Compile Include="DAO\DanhMucSPDAO.cs" />
     <Compile Include="DAO\SanPhamDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
-    <Compile Include="DAO\XuLy.cs" />
     <Compile Include="Entity\ChiTietGioHang.cs" />
     <Compile Include="Entity\DanhMucSP.cs" />
     <Compile Include="Entity\KhachHang.cs" />
@@ -320,6 +322,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuenMK.aspx.cs">
@@ -343,7 +352,6 @@
     <Folder Include="css\Admin\js\" />
     <Folder Include="css\Admin\scss\" />
     <Folder Include="css\Admin\vendor\chart.js\" />
-    <Folder Include="css\Admin\vendor\datatables\" />
     <Folder Include="css\Admin\vendor\fontawesome-free\" />
     <Folder Include="css\Admin\vendor\jquery-easing\" />
     <Folder Include="css\Admin\vendor\jquery\" />

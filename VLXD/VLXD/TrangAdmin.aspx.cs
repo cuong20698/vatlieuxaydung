@@ -81,20 +81,6 @@ namespace VLXD
             }
         }
 
-        private void XoaCookie() {
-            Session.Remove("username");
-            HttpCookie c1 = new HttpCookie("username");
-            HttpCookie c2 = new HttpCookie("password");
-            c1.Expires = DateTime.Now.AddDays(-1);
-            c2.Expires = DateTime.Now.AddDays(-1);
-            Response.Cookies.Add(c1);
-            Response.Cookies.Add(c2);
-            Response.Redirect("TrangAdmin.aspx");
-        }
-
-        protected void btnLogout_Click(object sender, EventArgs e)
-        {
-            XoaCookie();
-        }
+        
     }
 }

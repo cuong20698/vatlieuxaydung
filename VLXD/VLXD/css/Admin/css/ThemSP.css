@@ -1,0 +1,61 @@
+﻿#contain-tsp{
+    width:1000px;   
+}
+.td-tsp h3{
+    font-weight:bold;
+    color:#00780f;
+    width:800px;
+    margin:auto;
+    padding:20px;
+    text-align:center;
+}
+.main-tsp{
+    width:800px;
+    margin:auto;
+}
+.main-tsp table{
+    margin:auto;
+    line-height:40px;
+}
+.main-tsp table td{   
+     margin-left: 40px;
+}
+.text-tsp{
+    height:30px;
+    width:250px;
+    border:1px solid #ced4da;
+    padding:0 0 0 5px;
+    border-radius:5px;
+    outline:none; /*click vào k hiển thị đường viền ngoài*/
+}
+.footer-ssp{
+    width:800px;
+    margin:auto;
+    text-align:center;
+}
+.btnUpLoad{
+    height:30px;
+    border-radius:10px;
+    border:1px solid #00780f;
+    cursor:pointer;
+}
+.btnUpLoad:hover{
+    font-weight:bold;
+    color:#00780f;
+}
+.btn-them{
+    height:40px;
+    font-weight:bold;
+    border-radius:5px;
+    margin:5px;
+    border:1px solid #00780f;
+}
+.btn-them:hover{
+    background-color:#00780f;
+    color:white;
+}
+.imgThem{
+    width:90%;
+    border:2px solid #00780f;
+    border-radius:10px;
+}

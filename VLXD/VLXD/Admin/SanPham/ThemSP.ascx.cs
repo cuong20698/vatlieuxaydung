@@ -13,5 +13,9 @@ namespace VLXD.Admin.SanPham
         {
 
         }
+        protected void btnDangKy_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

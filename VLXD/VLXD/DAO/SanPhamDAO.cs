@@ -9,7 +9,7 @@ using VLXD.Entity;
 
 namespace VLXD.DAO
 {
-    public class SanPhamDAO : XuLy
+    public class SanPhamDAO
     {
         private string connectString = ConfigurationManager.ConnectionStrings["MyShop"].ConnectionString;
         public bool checkUser(string username)

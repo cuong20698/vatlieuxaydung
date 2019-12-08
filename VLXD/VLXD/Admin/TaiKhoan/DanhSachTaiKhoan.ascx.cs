@@ -18,7 +18,7 @@ namespace VLXD.Admin.TaiKhoan
         }
 
         private void loadDSTK() {
-            XuLy tkDao = new TaiKhoanDAO();
+            TaiKhoanDAO tkDao = new TaiKhoanDAO();
             DataTable dt = tkDao.getTable();
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < dt.Rows.Count; i++) {
