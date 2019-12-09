@@ -19,8 +19,7 @@ namespace VLXD.Admin.TaiKhoan
                 DataTable dt = DAO.getTable("SELECT * FROM NguoiDung WHERE UserName='" + Session["username"] + "'");
                 if (dt.Rows.Count > 0)
                 {
-                    txtHoTen.ReadOnly = true;
-                    txtHoTen.Text = dt.Rows[0]["UserName"].ToString();
+                    txtHoTen.Text = dt.Rows[0]["TenND"].ToString();
                     txtSDT.Text = dt.Rows[0]["SDT"].ToString();
                     txtDiaChi.Text = dt.Rows[0]["DiaChi"].ToString();
                     txtEmail.Text = dt.Rows[0]["Email"].ToString();
@@ -34,7 +33,7 @@ namespace VLXD.Admin.TaiKhoan
         protected void btnCapNhat_Click(object sender, EventArgs e)
         {
             
-            bool rs = DAO.update("UPDATE dbo.NguoiDung SET  Email ='" + txtEmail.Text + "',SDT ='" +txtSDT.Text+ "',DIACHI ='" + txtDiaChi.Text+ "'  WHERE UserName = '" + Session["username"] + "'");
+            bool rs = DAO.update("UPDATE dbo.NguoiDung SET TenND=N'"+txtHoTen.Text+"', Email ='" + txtEmail.Text + "',SDT ='" +txtSDT.Text+ "',DIACHI =N'" + txtDiaChi.Text+ "'  WHERE UserName = '" + Session["username"] + "'");
         
             if (rs == true)
             {

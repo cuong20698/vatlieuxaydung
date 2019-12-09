@@ -103,6 +103,7 @@
     <Content Include="Admin\TaiKhoan\ChiTietTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
+    <Content Include="TatHoatDong.aspx" />
     <Content Include="css\Admin\css\ThemSP.css" />
     <Content Include="css\Admin\vendor\datatables\dataTables.bootstrap4.css" />
     <Content Include="DangKy.aspx" />
@@ -291,6 +292,13 @@
     </Compile>
     <Compile Include="Admin\TaiKhoan\DoiMatKhau.ascx.designer.cs">
       <DependentUpon>DoiMatKhau.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TatHoatDong.aspx.cs">
+      <DependentUpon>TatHoatDong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TatHoatDong.aspx.designer.cs">
+      <DependentUpon>TatHoatDong.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\WebUserControl1.ascx.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>

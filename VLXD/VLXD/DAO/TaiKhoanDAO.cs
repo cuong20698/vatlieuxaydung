@@ -26,7 +26,7 @@ namespace VLXD.DAO
         }
 
         public bool login(string username, string password) {
-            string query = "SELECT COUNT(*) FROM NguoiDung WHERE UserName = '"+username+"' and Password = '"+password+"'";
+            string query = "SELECT COUNT(*) FROM NguoiDung WHERE UserName = '"+username+"' and Password = '"+password+"' and HoatDong = 1";
             using (SqlConnection conn = new SqlConnection(connectString)) {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -59,7 +59,7 @@ namespace VLXD.DAO
         public bool insert(NguoiDung nd)
         {
             string query = @"INSERT INTO NguoiDung VALUES('"+nd.userName+"','"+nd.passWord+"',N'"
-                +nd.hoTen+"','"+nd.email+"','"+nd.diaChi+"','"+nd.sdt+"','"+nd.idGroup+"')";
+                +nd.hoTen+"','"+nd.email+"',N'"+nd.diaChi+"','"+nd.sdt+"','"+nd.idGroup+"')";
             using (SqlConnection conn = new SqlConnection(connectString)) {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -68,18 +68,16 @@ namespace VLXD.DAO
             }
         }
 
-        public bool update(string Query)
+        public bool update(string query)
         {
-            SqlConnection connection = new SqlConnection(connectString);
-            SqlCommand cmd = new SqlCommand(Query, connection);
-            connection.Open();
-            int result = cmd.ExecuteNonQuery();
-            connection.Close();
-            if (result != 0)
+
+            using (SqlConnection conn = new SqlConnection(connectString))
             {
-                return true;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int result = cmd.ExecuteNonQuery();
+                return (result >= 1);
             }
-            return false;
         }
     }
 }

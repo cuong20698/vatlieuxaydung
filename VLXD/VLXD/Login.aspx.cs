@@ -42,7 +42,7 @@ namespace VLXD
             {
                 Session.Add("username", username);
                 SetCookie();
-                Response.Redirect("/TrangAdmin.aspx");
+                Response.Redirect("/TrangAdmin.aspx?modul=TaiKhoan&modul1=TK");
             }
             else {
                 lblTB.Text = @"<script>alert('Tên đăng nhập hoặc tài khoản không chính xác');</script>";
