@@ -19,7 +19,7 @@ namespace VLXD.Admin.TaiKhoan
 
         private void loadDSTK() {
             TaiKhoanDAO tkDao = new TaiKhoanDAO();
-            DataTable dt = tkDao.getTable();
+            DataTable dt = tkDao.getTable("select *from NguoiDung");
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < dt.Rows.Count; i++) {
                 sb.Append(@"

@@ -45,9 +45,8 @@ namespace VLXD.DAO
             throw new NotImplementedException();
         }
 
-        public DataTable getTable()
+        public DataTable getTable(string query)
         {
-            string query = "SELECT * FROM NguoiDung";
             using (SqlConnection conn = new SqlConnection(connectString)) {
                 conn.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query,conn);
@@ -69,9 +68,18 @@ namespace VLXD.DAO
             }
         }
 
-        public bool update(long id)
+        public bool update(string Query)
         {
-            throw new NotImplementedException();
+            SqlConnection connection = new SqlConnection(connectString);
+            SqlCommand cmd = new SqlCommand(Query, connection);
+            connection.Open();
+            int result = cmd.ExecuteNonQuery();
+            connection.Close();
+            if (result != 0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
