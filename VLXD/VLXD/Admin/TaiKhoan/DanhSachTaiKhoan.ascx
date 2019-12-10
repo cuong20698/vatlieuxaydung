@@ -21,3 +21,8 @@
         </table>
     </div>
 </div>
+<script>
+    function Xoa() {
+        return confirm("Bạn có chắc chắn muốn xóa tài khoản này?");;
+    }
+</script>
