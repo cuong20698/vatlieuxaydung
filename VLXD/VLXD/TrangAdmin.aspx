@@ -128,6 +128,7 @@
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Danh mục đơn hàng:</h6>
                         <a class="dropdown-item" href="TrangAdmin.aspx?modul=KhachHang&modul1=DSDH">Danh sách đơn hàng</a>
+                        <div class="dropdown-divider"></div>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

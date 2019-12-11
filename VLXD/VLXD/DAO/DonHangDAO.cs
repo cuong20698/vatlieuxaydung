@@ -28,7 +28,7 @@ namespace VLXD.DAO
 
         public DataTable getDetail(int Id)
         {
-            string query = "SELECT ChiTietDH.Id, SanPham.TenSP, ChiTietDH.DonGia, ChiTietDH.SoLuong  FROM ChiTietDH, SanPham where ChiTietDH.MaSP = SanPham.ID and MaDH = '" + Id + "'";
+            string query = "SELECT *  FROM ChiTietDonHang, SanPham where ChiTietDonHang.MaSP = SanPham.ID and MaDH = '" + Id + "'";
             using (SqlConnection conn = new SqlConnection(connectString))
             {
                 conn.Open();

@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\KhachHang\ChiTietDH.ascx" />
     <Content Include="Admin\KhachHang\DanhSachDH.ascx" />
     <Content Include="Admin\KhachHang\DanhSachKH.ascx" />
     <Content Include="Admin\SanPham\DanhSachLoai.ascx" />
@@ -230,6 +231,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\KhachHang\ChiTietDH.ascx.cs">
+      <DependentUpon>ChiTietDH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KhachHang\ChiTietDH.ascx.designer.cs">
+      <DependentUpon>ChiTietDH.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\KhachHang\DanhSachDH.ascx.cs">
       <DependentUpon>DanhSachDH.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

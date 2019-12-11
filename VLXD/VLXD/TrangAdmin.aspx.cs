@@ -11,7 +11,7 @@ namespace VLXD
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            checkSession();
+           //checkSession();
             loadLink1();
             loadLink2();
         }
