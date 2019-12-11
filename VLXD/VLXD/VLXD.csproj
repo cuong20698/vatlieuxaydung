@@ -293,6 +293,7 @@
     <Compile Include="Admin\TaiKhoan\DoiMatKhau.ascx.designer.cs">
       <DependentUpon>DoiMatKhau.ascx</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DonHangDAO.cs" />
     <Compile Include="TatHoatDong.aspx.cs">
       <DependentUpon>TatHoatDong.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

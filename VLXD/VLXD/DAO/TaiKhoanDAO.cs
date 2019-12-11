@@ -24,7 +24,17 @@ namespace VLXD.DAO
                 return (result >= 1);
             }
         }
-
+        public bool checkIDGroup(string username)
+        {
+            string query = "SELECT Count(*) FROM NguoiDung WHERE UserName='"+username+"' and HoatDong = 1 and IDGroup = 1";
+            using (SqlConnection conn = new SqlConnection(connectString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int result = (int)cmd.ExecuteScalar();
+                return (result >= 1);
+            }
+        }
         public bool login(string username, string password) {
             string query = "SELECT COUNT(*) FROM NguoiDung WHERE UserName = '"+username+"' and Password = '"+password+"' and HoatDong = 1";
             using (SqlConnection conn = new SqlConnection(connectString)) {
@@ -58,8 +68,8 @@ namespace VLXD.DAO
 
         public bool insert(NguoiDung nd)
         {
-            string query = @"INSERT INTO NguoiDung VALUES('"+nd.userName+"','"+nd.passWord+"',N'"
-                +nd.hoTen+"','"+nd.email+"',N'"+nd.diaChi+"','"+nd.sdt+"','"+nd.idGroup+"')";
+            string query = @"INSERT INTO NguoiDung(UserName,Password,TenND,Email,DiaChi,SDT,IDGroup,HoatDong) VALUES('"+nd.userName+"','"+nd.passWord+"',N'"
+                +nd.hoTen+"','"+nd.email+"',N'"+nd.diaChi+"','"+nd.sdt+"','"+nd.idGroup+"','"+nd.hoatDong+"')";
             using (SqlConnection conn = new SqlConnection(connectString)) {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);

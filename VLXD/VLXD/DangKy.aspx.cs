@@ -11,6 +11,7 @@ namespace VLXD
 {
     public partial class DangKy : System.Web.UI.Page
     {
+        TaiKhoanDAO tkDao = new TaiKhoanDAO();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -26,32 +27,55 @@ namespace VLXD
             string diaChi = txtDiaChi.Value;
             string email = txtEmail.Value;
             string sdt = txtSDT.Value;
-            int idGroup = 0;
-
-            NguoiDung nd = new NguoiDung(username, password, hoten, email, diaChi, sdt, idGroup);
+            NguoiDung nd = new NguoiDung(username, password, hoten, email, diaChi, sdt, 0,true);
             return nd;
         }
-        public void dangKy() {
-            TaiKhoanDAO tkDao = new TaiKhoanDAO();
-            if (getNguoiDung().passWord == txtConfirmPassword.Value) {
-                if (!tkDao.checkUser(getNguoiDung().userName))
+        public void dangKy()
+        {
+            if (Session["username"] == null)
+            {
+                if (getNguoiDung().passWord == txtConfirmPassword.Value)
                 {
-                    if (tkDao.insert(getNguoiDung()))
+                    if (!tkDao.checkUser(getNguoiDung().userName))
                     {
-                        lblTB.Text = @"<script>alert('Đăng ký tài khoản thành công!');</script>";
+                        if (tkDao.insert(getNguoiDung()))
+                        {
+                            Session.Add("username", getNguoiDung().userName);
+                            Response.Redirect("/TrangAdmin.aspx");
+                        }
+                    }
+                    else
+                    {
+                        lblTB.Text = @"<script>alert('Tên đăng nhập đã tồn tại!');</script>";
                     }
                 }
                 else
                 {
-                    lblTB.Text = @"<script>alert('Tên đăng nhập đã tồn tại!');</script>";
+                    lblTB.Text = @"<script>alert('Nhập mật khẩu không khớp!');</script>";
                 }
             }
             else
             {
-                lblTB.Text = @"<script>alert('Nhập mật khẩu không khớp!');</script>";
+                if (getNguoiDung().passWord == txtConfirmPassword.Value)
+                {
+                    if (!tkDao.checkUser(getNguoiDung().userName))
+                    {
+                        if (tkDao.insert(getNguoiDung()))
+                        {
+                            lblTB.Text = @"<script>alert('Đăng ký tài khoản thành công!');</script>";
+                        }
+                    }
+                    else
+                    {
+                        lblTB.Text = @"<script>alert('Tên đăng nhập đã tồn tại!');</script>";
+                    }
+                }
+                else
+                {
+                    lblTB.Text = @"<script>alert('Nhập mật khẩu không khớp!');</script>";
+                }
             }
         }
-
         protected void btnDangKy_Click(object sender, EventArgs e)
         {
             dangKy();

@@ -21,6 +21,12 @@ namespace VLXD.Admin.TaiKhoan
             TaiKhoanDAO tkDao = new TaiKhoanDAO();
             DataTable dt = tkDao.getTable("select *from NguoiDung WHERE HoatDong = 1");
             StringBuilder sb = new StringBuilder();
+            string off = "";
+            int kt = (int)Session["idgroup"];
+            if(kt == 1)
+            {
+                off = "<a onclick='return Xoa();' href = '/TatHoatDong.aspx?ma=" + dt.Rows[0]["ID"].ToString() + @"'>Off</a>";
+            }
             for (int i = 0; i < dt.Rows.Count; i++) {
                 sb.Append(@"
                 <tr>
@@ -31,7 +37,7 @@ namespace VLXD.Admin.TaiKhoan
                     <td>" + dt.Rows[i]["SDT"].ToString() + @"</td>
                     <td>" + dt.Rows[i]["IDGroup"].ToString() + @"</td>
                     <td>
-                        <a onclick='return Xoa();' href = '/TatHoatDong.aspx?ma=" + dt.Rows[i]["ID"].ToString() + @"'>Off</a>
+                       "+off+@" 
                     </td>
                 </tr>    
                 "); 

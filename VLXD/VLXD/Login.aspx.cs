@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using VLXD.DAO;
-
+using System.Data;
+using System.Data.SqlClient;
 namespace VLXD
 {
     public partial class Login : System.Web.UI.Page
@@ -38,8 +39,16 @@ namespace VLXD
             HttpCookie c1 = new HttpCookie("username");
             HttpCookie c2 = new HttpCookie("password");
             TaiKhoanDAO tkDao = new TaiKhoanDAO();
+
             if (tkDao.login(username, password))
             {
+                if (tkDao.checkIDGroup(username))
+                {
+                    Session.Add("idgroup", 1);
+                }
+                else{
+                    Session.Add("idgroup", 0);
+                }
                 Session.Add("username", username);
                 SetCookie();
                 Response.Redirect("/TrangAdmin.aspx?modul=TaiKhoan&modul1=TK");

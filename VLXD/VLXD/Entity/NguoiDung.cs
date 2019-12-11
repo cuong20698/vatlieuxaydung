@@ -14,8 +14,9 @@ namespace VLXD.Entity
         public string diaChi { get; set; }
         public string sdt { get; set; }
         public int idGroup { get; set; }
+        public bool hoatDong { get; set; }
 
-        public NguoiDung(string userName, string passWord, string hoTen, string email, string diaChi, string sdt, int idGroup) {
+        public NguoiDung(string userName, string passWord, string hoTen, string email, string diaChi, string sdt, int idGroup, bool hoatDong) {
             this.userName = userName;
             this.passWord = passWord;
             this.hoTen = hoTen;
@@ -23,6 +24,7 @@ namespace VLXD.Entity
             this.diaChi = diaChi;
             this.sdt = sdt;
             this.idGroup = idGroup;
+            this.hoatDong = hoatDong;
         }
     }
 }
