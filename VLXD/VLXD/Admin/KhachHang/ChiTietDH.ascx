@@ -7,7 +7,7 @@
     <div class="card-body">
         <table class="table table-bordered" id="dataTable" style="width: 100%;">
             <tr>
-                <th>STT</th>
+                <th>ID</th>
                 <th>Mã SP</th>
                 <th>Số lượng</th>
                 <th>Đơn giá</th>

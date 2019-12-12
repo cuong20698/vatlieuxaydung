@@ -29,7 +29,7 @@ namespace VLXD.DAO
 
         public DataTable getTable()
         {
-            string query = @"SELECT * FROM DanhMucSP";
+            string query = @"SELECT * FROM DanhMucSP where HoatDong=1";
             using (SqlConnection conn = new SqlConnection(connectString))
             {
                 conn.Open();
@@ -51,9 +51,15 @@ namespace VLXD.DAO
             }
         }
 
-        public bool update(long id)
+        public bool update(string query)
         {
-            throw new NotImplementedException();
+            using (SqlConnection conn = new SqlConnection(connectString))
+            {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    int result = cmd.ExecuteNonQuery();
+                    return (result >= 1);
+            }
         }
     }
 }

@@ -13,19 +13,20 @@ namespace VLXD.Admin.TaiKhoan
         TaiKhoanDAO DAO = new TaiKhoanDAO();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LBTHONGB.Text = "Đổi mật khẩu: "+Session["username"];
         }
 
         protected void btnXacNhan_Click(object sender, EventArgs e)
         {
+
             if (Session["username"] != null)
             {
                 DataTable dt = DAO.getTable("SELECT * FROM dbo.NguoiDung WHERE UserName ='" + Session["username"] + "'");
-                if (txtMatKhauMoi.Text == txtMatKhauMoi2.Text)
+                if (txtMatKhauMoi.Value == txtMatKhauMoi2.Value)
                 {
-                    if (txtMatKhauCu.Text == dt.Rows[0]["Password"].ToString())
+                    if (txtMatKhauCu.Value == dt.Rows[0]["Password"].ToString())
                     {
-                        bool rs = DAO.update("UPDATE dbo.NguoiDung SET  Password ='" + txtMatKhauMoi.Text + "' WHERE UserName = '" + Session["username"] + "'");
+                        bool rs = DAO.update("UPDATE dbo.NguoiDung SET  Password ='" + txtMatKhauMoi.Value + "' WHERE UserName = '" + Session["username"] + "'");
                         if (rs == true)
                         {
                             Response.Write("<script>alert('Đổi mật khẩu thành công!!');</script>");

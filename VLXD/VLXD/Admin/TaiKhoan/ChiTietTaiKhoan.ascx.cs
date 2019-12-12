@@ -14,15 +14,16 @@ namespace VLXD.Admin.TaiKhoan
         TaiKhoanDAO DAO = new TaiKhoanDAO();
         protected void Page_Load(object sender, EventArgs e)
         {
+            lbthongb.Text = "Thông tin tài khoản: "+Session["username"];
             if (Session["username"] != null)
             {
                 DataTable dt = DAO.getTable("SELECT * FROM NguoiDung WHERE UserName='" + Session["username"] + "'");
                 if (dt.Rows.Count > 0)
                 {
-                    txtHoTen.Text = dt.Rows[0]["TenND"].ToString();
-                    txtSDT.Text = dt.Rows[0]["SDT"].ToString();
-                    txtDiaChi.Text = dt.Rows[0]["DiaChi"].ToString();
-                    txtEmail.Text = dt.Rows[0]["Email"].ToString();
+                    txtHoten.Value = dt.Rows[0]["TenND"].ToString();
+                    txtsdt.Value = dt.Rows[0]["SDT"].ToString();
+                    txtdiachi.Value = dt.Rows[0]["DiaChi"].ToString();
+                    txtemail.Value = dt.Rows[0]["Email"].ToString();
                 }
             }
             else
@@ -32,8 +33,8 @@ namespace VLXD.Admin.TaiKhoan
 
         protected void btnCapNhat_Click(object sender, EventArgs e)
         {
-            
-            bool rs = DAO.update("UPDATE dbo.NguoiDung SET TenND=N'"+txtHoTen.Text+"', Email ='" + txtEmail.Text + "',SDT ='" +txtSDT.Text+ "',DIACHI =N'" + txtDiaChi.Text+ "'  WHERE UserName = '" + Session["username"] + "'");
+
+            bool rs = DAO.update("UPDATE dbo.NguoiDung SET TenND=N'" + txtHoten.Value + "', Email ='" + txtemail.Value + "',SDT ='" + txtsdt.Value + "',DIACHI =N'" + txtdiachi.Value + "'  WHERE UserName = '" + Session["username"] + "'");
         
             if (rs == true)
             {

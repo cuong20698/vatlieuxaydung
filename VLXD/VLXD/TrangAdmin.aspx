@@ -96,7 +96,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                         <h6 class="dropdown-header">Hồ sơ cá nhân:</h6>
-                        <a class="dropdown-item" href="TrangAdmin.aspx?modul=TaiKhoan&modul1=TK">Tài khoản</a>
+                        <a class="dropdown-item" href="TrangAdmin.aspx?modul=TaiKhoan&modul1=TK">Sửa thông tin cá nhân</a>
                         <a class="dropdown-item" href="TrangAdmin.aspx?modul=TaiKhoan&modul1=DoiMK">Đổi mật khẩu</a>
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Danh mục tài khoản:</h6>

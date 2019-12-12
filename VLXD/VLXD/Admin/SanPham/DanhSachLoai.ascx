@@ -61,7 +61,7 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-chart-area"></i>
-        Danh sách tài khoản
+        Danh sách loại sản phẩm
     </div>
     <div class="card-body">
         <div class="form-contain">

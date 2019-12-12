@@ -83,11 +83,13 @@ namespace VLXD.DAO
 
             using (SqlConnection conn = new SqlConnection(connectString))
             {
-                conn.Open();
+                try {conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);
                 int result = cmd.ExecuteNonQuery();
-                return (result >= 1);
+                return (result >= 1); }
+                catch{ }
             }
+            return false;
         }
     }
 }

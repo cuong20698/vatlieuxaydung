@@ -3,7 +3,7 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-chart-area"></i>
-        Danh sách tài khoản
+        Danh sách đơn hàng
     </div>
     <div class="card-body">
         <table class="table table-bordered" id="dataTable" style="width: 100%;">

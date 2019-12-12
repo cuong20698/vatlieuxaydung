@@ -30,7 +30,7 @@ namespace VLXD.Admin.SanPham
                     <td>" + dt.Rows[i]["ID"].ToString() + @"</td>
                     <td>" + dt.Rows[i]["Name"].ToString() + @"</td>
                     <td>
-                        <a onClick='alert('cgfhhgfty');' href = '?MaSP=" + dt.Rows[i]["ID"].ToString() + @"'>Xóa</a>
+                        <a onClick='alert('cgfhhgfty');' href = '/TatHoatDong.aspx?MaLoaiSP=" + dt.Rows[i]["ID"].ToString() + @"'>Xóa</a>
                         <a href = 'SuaSP.aspx?MaSP=" + dt.Rows[i]["ID"].ToString() + @"'>Sửa</a>
                     </td>
                 </tr>    

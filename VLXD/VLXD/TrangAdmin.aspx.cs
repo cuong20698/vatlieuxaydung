@@ -11,7 +11,7 @@ namespace VLXD
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           //checkSession();
+           checkSession();
             loadLink1();
             loadLink2();
         }
@@ -46,7 +46,7 @@ namespace VLXD
             switch (modul1)
             {
                 case "TK":
-                    lblLink2.Text = "Chi tiết tài khoản";
+                    lblLink2.Text = "Chỉnh sửa thông tin cá nhân";
                     break;
                 case "DSTK":
                     lblLink2.Text = "Danh sách tài khoản";

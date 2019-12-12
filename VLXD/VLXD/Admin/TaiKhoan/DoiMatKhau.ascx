@@ -45,37 +45,30 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-chart-area"></i>
-        Tài khoản
+        Đổi mật khẩu
     </div>
     <div class="card-body">
-        <div class="TieuDe">Đổi mật khẩu</div>
+        <div class="TieuDe"><asp:Label ID="LBTHONGB" runat="server" Text=""></asp:Label></div>
         <table style="margin: auto; line-height: 50px;">
             <tr>
-                <td>Mật khẩu cũ:</td>
+                <td>Mật khẩu hiện tại:</td>
                 <td>
-                    <asp:TextBox ID="txtMatKhauCu" runat="server" class="Input" placeholder="Mật khẩu cũ" TextMode="Password"></asp:TextBox></td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="" ForeColor="Red" SetFocusOnError="True" Text="*" ControlToValidate="txtMatKhauCu"></asp:RequiredFieldValidator></td>
+                    <input class="Input" type="password" id="txtMatKhauCu" runat="server" placeholder="Nhập mật khẩu hiện tại" pattern=".{6,20}" title="Độ dài phải từ 6 đến 20 kí tự"  required>
+                </td>
 
             </tr>
             <tr>
                 <td>Mật khẩu mới:</td>
-                <td>
-                    <asp:TextBox ID="txtMatKhauMoi" runat="server" class="Input" placeholder="Nật khẩu mới" TextMode="Password"></asp:TextBox>
-
-                </td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="" ForeColor="Red" SetFocusOnError="True" Text="*" ControlToValidate="txtMatKhauMoi"></asp:RequiredFieldValidator>
+                <td> 
+                <input class="Input" type="password" id="txtMatKhauMoi" runat="server" placeholder="Nhập mật khẩu mới" pattern=".{6,20}" title="Độ dài phải từ 6 đến 20 kí tự"  required>
                 </td>
             </tr>
             <tr>
-                <td>Nhập lại mật khẩu:</td>
+                <td>Xác nhận mật khẩu mới:</td>
                 <td>
-                    <asp:TextBox ID="txtMatKhauMoi2" runat="server" class="Input" placeholder="Nhập lại mật khẩu mới" TextMode="Password"></asp:TextBox>
+                    <input class="Input" type="password" id="txtMatKhauMoi2" runat="server" placeholder="Nhập lại mật khẩu mới" pattern=".{6,20}" title="Độ dài phải từ 6 đến 20 kí tự"  required>
                 </td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="" ForeColor="Red" SetFocusOnError="True" Text="*" ControlToValidate="txtMatKhauMoi2"></asp:RequiredFieldValidator>
-                </td>
+                
             </tr>
             <tr>
                 <td colspan="2">

@@ -14,7 +14,7 @@ namespace VLXD.Admin.SanPham
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            loadSP();
         }
 
         private void loadSP() {
@@ -33,7 +33,7 @@ namespace VLXD.Admin.SanPham
                     <td>" + dt.Rows[i]["Mota"].ToString() + @"</td>
                     <td>" + dt.Rows[i]["LoaiSP"].ToString() + @"</td>
                     <td>
-                        <a onClick='alert('cgfhhgfty');' href = '?MaSP=" + dt.Rows[i]["ID"].ToString() + @"'>Xóa</a>
+                        <a onClick='alert('cgfhhgfty');' href = '/TatHoatDong.aspx?MaSP=" + dt.Rows[i]["ID"].ToString() + @"'>Xóa</a>
                         <a href = 'SuaSP.aspx?MaSP=" + dt.Rows[i]["ID"].ToString() + @"'>Sửa</a>
                     </td>
                 </tr>    

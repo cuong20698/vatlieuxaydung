@@ -100,10 +100,12 @@
     <Content Include="Admin\SanPham\DanhSachLoai.ascx" />
     <Content Include="Admin\SanPham\DanhSachSanPham.ascx" />
     <Content Include="Admin\SanPham\ThemSP.ascx" />
+    <Content Include="Admin\SanPham\XoaLoaiSP.ascx" />
     <Content Include="Admin\TaiKhoan\ChinhSuaTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\ChiTietTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
+    <Content Include="GiaoHang.aspx" />
     <Content Include="TatHoatDong.aspx" />
     <Content Include="css\Admin\css\ThemSP.css" />
     <Content Include="css\Admin\vendor\datatables\dataTables.bootstrap4.css" />
@@ -273,6 +275,13 @@
     <Compile Include="Admin\SanPham\ThemSP.ascx.designer.cs">
       <DependentUpon>ThemSP.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\SanPham\XoaLoaiSP.ascx.cs">
+      <DependentUpon>XoaLoaiSP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SanPham\XoaLoaiSP.ascx.designer.cs">
+      <DependentUpon>XoaLoaiSP.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\TaiKhoan\ChinhSuaTaiKhoan.ascx.cs">
       <DependentUpon>ChinhSuaTaiKhoan.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -302,6 +311,13 @@
       <DependentUpon>DoiMatKhau.ascx</DependentUpon>
     </Compile>
     <Compile Include="DAO\DonHangDAO.cs" />
+    <Compile Include="GiaoHang.aspx.cs">
+      <DependentUpon>GiaoHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiaoHang.aspx.designer.cs">
+      <DependentUpon>GiaoHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TatHoatDong.aspx.cs">
       <DependentUpon>TatHoatDong.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

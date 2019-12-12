@@ -43,45 +43,37 @@
         }
 </style>
 <!-- Area Chart Example-->
-<div class="card mb-3">
+<div class="card mb-3" >
     <div class="card-header">
         <i class="fas fa-chart-area"></i>
-         Tài khoản
+         Chỉnh sửa thông tin cá nhân
     </div>
     <div class="card-body">
-        <div class="TieuDe">Thông tin tài khoản</div>
-        <table style="margin:auto; line-height:50px;">
+       <div class="TieuDe">  <asp:Label ID="lbthongb" runat="server" Text=""></asp:Label></div>
+        <table  style="margin:auto; line-height:50px;" >
             <tr >
                 <td >Họ và tên:</td>
                 <td>
-                    <asp:TextBox ID="txtHoTen" runat="server" class="Input" placeholder="Tên tài khoản"></asp:TextBox>
+                   <input class="Input" type="text" id="txtHoten" runat="server" placeholder="Vui lòng nhập Họ Tên" required/> 
                 </td>
-                <td><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="" ForeColor="Red" SetFocusOnError="True" Text="*" ControlToValidate="txtHoTen"></asp:RequiredFieldValidator></td>
             </tr>
             <tr >
                 <td >Email:</td>
                 <td>
-                    <asp:TextBox ID="txtEmail" runat="server" class="Input" placeholder="Email"></asp:TextBox></td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="" ForeColor="Red" SetFocusOnError="True" Text="*" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="" Text="*" ForeColor="red" SetFocusOnError="true" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ></asp:RegularExpressionValidator>
+                 <input class="Input" type="email" id="txtemail" runat="server" placeholder="Vui lòng nhập Email" title="Địa chỉ email không hợp lệ" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
                 </td>
 
             </tr>
             <tr >
                 <td >Địa chỉ:</td>
                 <td>
-                    <asp:TextBox ID="txtDiaChi" runat="server" class="Input" placeholder="Địa chỉ"></asp:TextBox>
-                </td>
-                <td><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="" ForeColor="Red" SetFocusOnError="True" Text="*" ControlToValidate="txtDiaChi"></asp:RequiredFieldValidator>
+                    <input class="Input" type="text" id="txtdiachi" runat="server" placeholder="Vui lòng nhập Địa chỉ" required/> 
                 </td>
             </tr>
             <tr >
                 <td >Số điện thoại:</td>
                 <td>
-                    <asp:TextBox ID="txtSDT" runat="server" class="Input" placeholder="Số điện thoại"></asp:TextBox></td>
-                <td><asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="" ForeColor="Red" SetFocusOnError="True" Text="*" ControlToValidate="txtSDT"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtSDT" ErrorMessage="" ForeColor="Red" SetFocusOnError="True" ValidationExpression="^(0[0-9]{9,10})$">*</asp:RegularExpressionValidator>
+                    <input class="Input" type="text" id="txtsdt" runat="server" placeholder="Vui lòng nhập SDT" pattern="[0][0-9]{9}" title="Số điện thoại không hợp lệ" required/> 
                 </td>
             </tr>
             <tr >
