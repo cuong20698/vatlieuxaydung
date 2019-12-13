@@ -27,6 +27,17 @@ namespace VLXD.DAO
             throw new NotImplementedException();
         }
 
+        public DataTable getTable1(string query)
+        {
+            using (SqlConnection conn = new SqlConnection(connectString))
+            {
+                conn.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+            }
+        }
         public DataTable getTable()
         {
             string query = @"SELECT * FROM SanPham where HoatDong=1";
@@ -39,10 +50,10 @@ namespace VLXD.DAO
             }
         }
 
-        public bool insert(SanPham sp)
+        public bool insert(SP sp)
         {
 
-            string query = @"INSERT INTO SanPham() VALUES('')";
+            string query = @"INSERT INTO SanPham(ID,TenSP,Gia,HinhAnh,SPNoiBat,Mota,LoaiSP) VALUES('" + sp.maSP + "','" + sp.tenSP + "','" + sp.gia + "','" + sp.hinhAnh + "','" + sp.spNoiBat + "','" + sp.moTa + "','" + sp.loaiSP + "')";
             using (SqlConnection conn = new SqlConnection(connectString))
             {
                 conn.Open();

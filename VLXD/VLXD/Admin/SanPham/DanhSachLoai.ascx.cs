@@ -17,7 +17,7 @@ namespace VLXD.Admin.SanPham
         {
             loadDSTK();
         }
-
+        
         private void loadDSTK()
         {
             DanhMucSPDAO tkDao = new DanhMucSPDAO();
@@ -40,7 +40,7 @@ namespace VLXD.Admin.SanPham
         }
         private DanhMucSP getData() {
             string name = txtTenLoai.Value;
-            return new DanhMucSP(name);
+            return new DanhMucSP(name,1);
         }
         protected void btnThem_Click(object sender, EventArgs e)
         {

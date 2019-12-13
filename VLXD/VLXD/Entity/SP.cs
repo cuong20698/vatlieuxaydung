@@ -5,8 +5,9 @@ using System.Web;
 
 namespace VLXD.Entity
 {
-    public class SanPham
+    public class SP
     {
+        public int maSP { get; set; }
         public string tenSP { get; set; }
         public double gia { get; set; }
         public string hinhAnh { get; set; }
@@ -14,7 +15,8 @@ namespace VLXD.Entity
         public string moTa { get; set; }
         public int loaiSP { get; set; }
 
-        public SanPham(string tenSP, double gia, string hinhAnh, bool spNoiBat, string moTa, int loaiSP) {
+        public SP(int maSP,string tenSP, double gia, string hinhAnh, bool spNoiBat, string moTa, int loaiSP) {
+            this.maSP = maSP;
             this.tenSP = tenSP;
             this.gia = gia;
             this.hinhAnh = hinhAnh;
