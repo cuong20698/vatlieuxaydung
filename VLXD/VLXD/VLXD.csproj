@@ -105,6 +105,99 @@
     <Content Include="Admin\TaiKhoan\ChiTietTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
+    <Content Include="BanHang\BanHangUserControl.ascx" />
+    <Content Include="css\Web\app\appMain.js" />
+    <Content Include="css\Web\app\controllers\moduleController.js" />
+    <Content Include="css\Web\app\directives\angular-summernote.js" />
+    <Content Include="css\Web\app\directives\directive.js" />
+    <Content Include="css\Web\app\directives\paging.js" />
+    <Content Include="css\Web\app\services\ajaxServices.js" />
+    <Content Include="css\Web\app\services\alertsServices.js" />
+    <Content Include="css\Web\app\services\moduleServices.js" />
+    <Content Include="css\Web\assets\100002\css\animate.css" />
+    <Content Include="css\Web\assets\100002\css\flexslider.css" />
+    <Content Include="css\Web\assets\100002\css\images\bx_loader.gif" />
+    <Content Include="css\Web\assets\100002\css\jquery.bxslider.css" />
+    <Content Include="css\Web\assets\100002\css\reset.css" />
+    <Content Include="css\Web\assets\100002\css\select2.min.css" />
+    <Content Include="css\Web\assets\100002\fonts\fontawesome\css\font-awesome.min.css" />
+    <Content Include="css\Web\assets\100002\img\trademark_1.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_10.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_2.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_3.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_4.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_5.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_6.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_7.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_8.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_9.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\js\api.jquery.min.js" />
+    <Content Include="css\Web\assets\100002\js\bootstrap\css\bootstrap.min.css" />
+    <Content Include="css\Web\assets\100002\js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="css\Web\assets\100002\js\fancybox\jquery.fancybox.css" />
+    <Content Include="css\Web\assets\100002\js\fancybox\jquery.fancybox.js" />
+    <Content Include="css\Web\assets\100002\js\fixheightproductv2.js" />
+    <Content Include="css\Web\assets\100002\js\haravan.plugin.1.0.min.js" />
+    <Content Include="css\Web\assets\100002\js\html5shiv.js" />
+    <Content Include="css\Web\assets\100002\js\jquery-1.11.3.min.js" />
+    <Content Include="css\Web\assets\100002\js\jquery-migrate-1.2.0.min.js" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\jquery-ui.css" />
+    <Content Include="css\Web\assets\100002\js\jquery-ui\jquery-ui.min.js" />
+    <Content Include="css\Web\assets\100002\js\jquery.actual.min.js" />
+    <Content Include="css\Web\assets\100002\js\jquery.bxslider.min.js" />
+    <Content Include="css\Web\assets\100002\js\jquery.cookie.js" />
+    <Content Include="css\Web\assets\100002\js\jquery.countdown.min.js" />
+    <Content Include="css\Web\assets\100002\js\jquery.flexslider-min.js" />
+    <Content Include="css\Web\assets\100002\js\jquery.plugin.js" />
+    <Content Include="css\Web\assets\100002\js\jquery.touchSwipe.min.js" />
+    <Content Include="css\Web\assets\100002\js\modernizr.min.js" />
+    <Content Include="css\Web\assets\100002\js\option_selection.min.js" />
+    <Content Include="css\Web\assets\100002\js\owl.carousel\owl.carousel.css" />
+    <Content Include="css\Web\assets\100002\js\owl.carousel\owl.carousel.min.js" />
+    <Content Include="css\Web\assets\100002\js\select2.min.js" />
+    <Content Include="css\Web\assets\100002\js\theme-script.js" />
+    <Content Include="css\Web\css\img\hd-login.png" />
+    <Content Include="css\Web\css\img\icon-cart-round.png" />
+    <Content Include="css\Web\css\img\notify-right.png" />
+    <Content Include="css\Web\css\responsive.css" />
+    <Content Include="css\Web\css\style.css" />
+    <Content Include="css\Web\Images\ajax-loader-main.gif" />
+    <Content Include="css\Web\img\jquery.lazyload.js" />
+    <Content Include="css\Web\Scripts\angular-loading-spinner\angular-loading-spinner.js" />
+    <Content Include="css\Web\Scripts\angular-loading-spinner\angular-spinner.min.js" />
+    <Content Include="css\Web\Scripts\angular-loading-spinner\spin.min.js" />
+    <Content Include="css\Web\Scripts\angularJS\angular-sanitize.min.js" />
+    <Content Include="css\Web\Scripts\angularJS\angular.min.js" />
+    <Content Include="css\Web\Scripts\common\login.js" />
+    <Content Include="css\Web\Scripts\common\mycard.js" />
+    <Content Include="css\Web\Scripts\lazyLoad\jquery.lazyload.min.js" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s1.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s11.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s12.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s2.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s3.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s4.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s5.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s6.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s7.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s8.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\icon\s9.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\logo1.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\logo2.png" />
     <Content Include="GiaoHang.aspx" />
     <Content Include="TatHoatDong.aspx" />
     <Content Include="css\Admin\css\ThemSP.css" />
@@ -211,6 +304,11 @@
     <Content Include="css\Admin\vendor\bootstrap\scss\_variables.scss" />
     <Content Include="QuenMK.aspx" />
     <Content Include="TrangAdmin.aspx" />
+    <Content Include="css\Web\assets\100002\js\bootstrap\fonts\glyphicons-halflings-regular.svg#glyphicons_halflingsregular" />
+    <Content Include="css\Web\assets\100002\js\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\Web\assets\100002\js\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\Web\assets\100002\js\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="css\Web\connect.facebook.net\en_US\sdk.js#xfbml=1&amp;version=v2.6&amp;appId=227481454296289" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -228,6 +326,7 @@
     <Content Include="css\Admin\vendor\bootstrap\js\bootstrap.min.js" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="TrangBanHang.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -310,6 +409,13 @@
     <Compile Include="Admin\TaiKhoan\DoiMatKhau.ascx.designer.cs">
       <DependentUpon>DoiMatKhau.ascx</DependentUpon>
     </Compile>
+    <Compile Include="BanHang\BanHangUserControl.ascx.cs">
+      <DependentUpon>BanHangUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\BanHangUserControl.ascx.designer.cs">
+      <DependentUpon>BanHangUserControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="DAO\DonHangDAO.cs" />
     <Compile Include="GiaoHang.aspx.cs">
       <DependentUpon>GiaoHang.aspx</DependentUpon>
@@ -378,17 +484,25 @@
     <Compile Include="TrangAdmin.aspx.designer.cs">
       <DependentUpon>TrangAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TrangBanHang.aspx.cs">
+      <DependentUpon>TrangBanHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrangBanHang.aspx.designer.cs">
+      <DependentUpon>TrangBanHang.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\DoanhThu\" />
-    <Folder Include="BanHang\" />
     <Folder Include="css\Admin\js\" />
     <Folder Include="css\Admin\scss\" />
     <Folder Include="css\Admin\vendor\chart.js\" />
     <Folder Include="css\Admin\vendor\fontawesome-free\" />
     <Folder Include="css\Admin\vendor\jquery-easing\" />
     <Folder Include="css\Admin\vendor\jquery\" />
-    <Folder Include="css\Web\" />
+    <Folder Include="css\Web\assets\100002\fonts\fontawesome\fonts\" />
+    <Folder Include="css\Web\assets\100002\js\bootstrap\css\github.com\necolas\" />
+    <Folder Include="css\Web\hstatic.net\817\1000069817\1000098314\" />
     <Folder Include="pic\" />
   </ItemGroup>
   <PropertyGroup>
