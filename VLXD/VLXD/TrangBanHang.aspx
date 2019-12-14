@@ -5,18 +5,17 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta charset="UTF-8" />
-    <title>Sản phẩm</title>
+    <title>Vật liệu xây dựng</title>
     <meta name="description" />
     <meta name="keywords" />
     <link href="/../css/Web/Uploads/shop2198/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="fb:app_id" content="227481454296289" />
-    
+
     <meta content="vi_VN" property="og:locale" />
     <meta content="website" property="og:type" />
     <meta content="Sản phẩm" property="og:title" />
@@ -24,6 +23,7 @@
     <meta property="og:image" />
     <meta property="og:url" />
     <meta property="og:site_name" />
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../css/Web/assets100002/js/jquery-1.11.3.min.js"></script>
@@ -84,7 +84,7 @@
 
 </head>
 <body ng-app="appMain" style="" class="home option2">
-    <div class="wrapper">
+    <div class="wrapper page-home">
         <div id="header" class="header">
             <section class="top-link clearfix">
                 <div class="container">
@@ -135,12 +135,10 @@
             <!-- MAIN HEADER -->
             <div class="container main-header">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-3 logo">
-                        <a href="/" class="logo" title="vatlieuxaydung">
-                            <img src="../css/Web/Uploads/shop2198/images/logo1.png" height="70px" alt="vatlieuxaydung" title="vatlieuxaydung">
+                    <div class="col-xs-12 col-sm-3 logo" style="text-align:center;">
+                        <a href="/TrangBanHang.aspx?modul1=TrangChu" class="logo" title="vatlieuxaydung">
+                            <img src="../css/Web/Uploads/shop2198/images/logo2.png" width="70%" alt="vatlieuxaydung" title="vatlieuxaydung">
                         </a>
-                        <h1 style="display: none;">vatlieuxaydung
-                        </h1>
                     </div>
                     <div class="col-xs-7 col-sm-7 header-search-box">
                         <div class="search-box">
@@ -187,7 +185,7 @@
                                                 <li class="level1"><a class='' href='/san-pham/ao-so-mi-40422'><span>Áo sơ mi</span></a></li>
                                                 <li class="level1"><a class='' href='/san-pham/ao-khoac-40423'><span>Áo khoác</span></a></li>
                                                 <li class="level1"><a class='' href='/san-pham/ao-thun-40424'><span>Áo thun</span></a></li>
-                                               
+
                                             </ul>
                                         </li>
                                     </ul>
@@ -205,9 +203,9 @@
                                     </div>
                                     <div id="new-menu" class="navbar-collapse collapse">
                                         <ul class='menu t-menu nav'>
-                                            <li class="level0"><a class='' href='/trang-chu.html'><span>Trang chủ</span></a></li>
+                                            <li class="level0"><a class='' href='/TrangBanHang.aspx?modul1=TrangChu'><span>Trang chủ</span></a></li>
                                             <li class="level0"><a class='' href='/gioi-thieu.html'><span>Giới thiệu</span></a></li>
-                                            <li class="level0"><a class='' href='/san-pham.html'><span>Sản phẩm</span></a></li>
+                                            <li class="level0"><a class='' href='/TrangBanHang.aspx?modul=SanPham?modul1=DSSP'><span>Sản phẩm</span></a></li>
                                             <li class="level0"><a class='' href='/tin-tuc.html'><span>Tin tức</span></a></li>
                                             <li class="level0"><a class='' href='/lien-he.html'><span>Liên hệ</span></a></li>
                                         </ul>
@@ -262,157 +260,131 @@
                     });
                 });
             </script>
-
-            <div id="page">
-                <div class="main">
-                    <div class="container">
-                        <div class="row">
-                            <uc1:BanHangUserControl runat="server" id="BanHangUserControl" />
+        </div>
+        <uc1:BanHangUserControl runat="server" ID="BanHangUserControl" />
+        <div class="footer">
+            <script src="../css/Web/app/services/moduleServices.js"></script>
+            <script src="../css/Web/app/controllers/moduleController.js"></script>
+            <footer id="footer">
+                <div class="container">
+                    <!-- introduce-box -->
+                    <div id="introduce-box" class="row">
+                        <div class="col-md-3">
+                            <div id="address-box">
+                                <a href="/TrangBanHang.aspx?modul1=TrangChu">
+                                    <img src="css/Web/Uploads/shop2198/images/logo2.png" width="80%"/>
+                                </a>
+                                <div id="address-list">
+                                    <div class="tit-name">Địa chỉ:</div>
+                                    <div class="tit-contain">Bình Định</div>
+                                    <div class="tit-name">Điện thoại:</div>
+                                    <div class="tit-contain">0356778899</div>
+                                    <div class="tit-name">Email:</div>
+                                    <div class="tit-contain">vovietcuongcntt39b@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="introduce-title">Về chúng tôi</div>
+                                    <ul class="introduce-list">
+                                        <li class="item">
+                                            <a href="/gioi-thieu.html">Giới thiệu
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/content/giao-hang-doi-tra.html">Giao hàng - Đổi trả
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/content/chinh-sach-bao-mat.html">Chính sách bảo mật
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/lien-he.html">Liên hệ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="introduce-title">Trợ giúp</div>
+                                    <ul class="introduce-list">
+                                        <li class="item">
+                                            <a href="/content/huong-dan-mua-hang.html">Hướng dẫn mua hàng
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/content/huong-dan-thanh-toan.html">Hướng dẫn thanh toán
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="/content/tai-khoan-giao-dich.html">Tài khoản giao dịch
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="contact-box" ng-controller="moduleController" ng-init="initController()">
+                                <div class="introduce-title">Đăng ký nhận tin</div>
+                                <form ng-submit="registerNewsletter()" class='contact-form'>
+                                    <div class="input-group" id="mail-box">
+                                        <input ng-model="newsletter.Email" type="email" placeholder="Đăng ký email" required="required" />
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn btn-default">Gửi</button>
+                                        </span>
+                                    </div>
+                                    <!-- /input-group -->
+                                </form>
+                                <div class="introduce-title">Liên kết</div>
+                                <div class="social-link">
+                                    <a><i class="fa fa-facebook"></i></a>
+                                    <a><i class="fa fa-youtube"></i></a>
+                                    <a><i class="fa fa-twitter"></i></a>
+                                    <a><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <!-- /#introduce-box -->
+                    <!-- #trademark-box -->
+                    <div id="trademark-box" class="row">
+                        <div class="col-sm-12">
+                            <ul id="trademark-list">
+                                <li id="payment-methods">Phương thức thanh toán</li>
 
-            <div class="footer">
-                <script src="../css/Web/app/services/moduleServices.js"></script>
-                <script src="../css/Web/app/controllers/moduleController.js"></script>
-                <footer id="footer">
-                    <div class="container">
-                        <!-- introduce-box -->
-                        <div id="introduce-box" class="row">
-                            <div class="col-md-3">
-                                <div id="address-box">
-                                    <a href="/">
-                                        <img src="../css/Web/Uploads/shop2198/images/logo1.png" alt="logo" /></a>
-                                    <div id="address-list">
-                                        <div class="tit-name">Địa chỉ:</div>
-                                        <div class="tit-contain">Bình Định</div>
-                                        <div class="tit-name">Điện thoại:</div>
-                                        <div class="tit-contain">0356778899</div>
-                                        <div class="tit-name">Email:</div>
-                                        <div class="tit-contain">vovietcuongcntt39b@gmail.com</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="introduce-title">Về chúng tôi</div>
-                                        <ul class="introduce-list">
-                                            <li class="item">
-                                                <a href="/gioi-thieu.html">Giới thiệu
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/content/giao-hang-doi-tra.html">Giao hàng - Đổi trả
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/content/chinh-sach-bao-mat.html">Chính sách bảo mật
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/lien-he.html">Liên hệ
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="introduce-title">Trợ giúp</div>
-                                        <ul class="introduce-list">
-                                            <li class="item">
-                                                <a href="/content/huong-dan-mua-hang.html">Hướng dẫn mua hàng
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/content/huong-dan-thanh-toan.html">Hướng dẫn thanh toán
-                                                </a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="/content/tai-khoan-giao-dich.html">Tài khoản giao dịch
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div id="contact-box" ng-controller="moduleController" ng-init="initController()">
-                                    <div class="introduce-title">Đăng ký nhận tin</div>
-                                    <form ng-submit="registerNewsletter()" class='contact-form'>
-                                        <div class="input-group" id="mail-box">
-                                            <input ng-model="newsletter.Email" type="email" placeholder="Đăng ký email" required="required" />
-                                            <span class="input-group-btn">
-                                                <button type="submit" class="btn btn-default">Gửi</button>
-                                            </span>
-                                        </div>
-                                        <!-- /input-group -->
-                                    </form>
-                                    <div class="introduce-title">Liên kết</div>
-                                    <div class="social-link">
-                                        <a><i class="fa fa-facebook"></i></a>
-                                        <a><i class="fa fa-youtube"></i></a>
-                                        <a><i class="fa fa-twitter"></i></a>
-                                        <a><i class="fa fa-google-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_1.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_10.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_2.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_3.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_4.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_5.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_6.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_7.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_8.jpg_-1512461186.jpg" /></a></li>
+                                <li><a href="javascript:;">
+                                    <img src="../css/Web/assets/100002/img/trademark_9.jpg_-1512461186.jpg" /></a></li>
+                            </ul>
                         </div>
-                        <!-- /#introduce-box -->
-                        <!-- #trademark-box -->
-                        <div id="trademark-box" class="row">
-                            <div class="col-sm-12">
-                                <ul id="trademark-list">
-                                    <li id="payment-methods">Phương thức thanh toán</li>
-
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_1.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_10.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_2.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_3.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_4.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_5.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_6.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_7.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_8.jpg_-1512461186.jpg" /></a></li>
-                                    <li><a href="javascript:;">
-                                        <img src="css/Web/assets/100002/img/trademark_9.jpg_-1512461186.jpg" /></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /#trademark-box -->
-                        <p class="cpr text-center">
-                            &copy; Bản quyền thuộc về <a href="#" style="color: #0f9ed8" target="_blank">VẬT LIỆU XÂY DỰNG SHOP</a> | <a target="_blank" href="#">Powered by vatlieuxaydung.vn</a>.
-                        </p>
                     </div>
-                </footer>
-            </div>
-
-            <script type="text/javascript">
-                $(".vertical-menu-content").addClass("no-home");
-                $(document).ready(function () {
-                $(".menu-quick-select ul").hide();
-                $(".menu-quick-select").hover(function () { $(".menu-quick-select ul").show(); }, function () { $(".menu-quick-select ul").hide(); });
-                });
-            </script>
-        </div>
-        <div style="display: none;" id="loading-mask">
-            <div id="loading_mask_loader" class="loader">
-                <img alt="Loading..." src="Images/ajax-loader-main.gif" />
-                <div>
-                    Please wait...
+                    <!-- /#trademark-box -->
+                    <p class="cpr text-center">
+                        &copy; Bản quyền thuộc về <a href="#" style="color: #0f9ed8" target="_blank">VẬT LIỆU XÂY DỰNG SHOP</a> | <a target="_blank" href="#">Powered by vatlieuxaydung.vn</a>.
+                    </p>
                 </div>
-            </div>
+            </footer>
         </div>
-        <a href="#" class="scroll_top" title="Scroll to Top" style="display: none;">Scroll</a>
     </div>
 </body>
 </html>

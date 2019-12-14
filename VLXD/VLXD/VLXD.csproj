@@ -106,6 +106,8 @@
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
     <Content Include="BanHang\BanHangUserControl.ascx" />
+    <Content Include="BanHang\SanPham\DanhSachSanPham.ascx" />
+    <Content Include="BanHang\TrangChu.ascx" />
     <Content Include="css\Web\app\appMain.js" />
     <Content Include="css\Web\app\controllers\moduleController.js" />
     <Content Include="css\Web\app\directives\angular-summernote.js" />
@@ -198,6 +200,39 @@
     <Content Include="css\Web\Uploads\shop2198\images\icon\s9.png" />
     <Content Include="css\Web\Uploads\shop2198\images\logo1.png" />
     <Content Include="css\Web\Uploads\shop2198\images\logo2.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p35_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p44_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p49_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p50_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p51_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p52_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p53_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p55_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p56_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p57_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p58_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p59_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p60_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p61_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p62_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p63_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p64_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p65_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p66_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p75_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p76_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p77_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p78_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p79_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p80_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p82_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p83_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p84_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p85_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\p86_large.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\slider\banner_silder_2.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\slider\banner_silder_3.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\slider\banner_silder_4.jpg" />
     <Content Include="GiaoHang.aspx" />
     <Content Include="TatHoatDong.aspx" />
     <Content Include="css\Admin\css\ThemSP.css" />
@@ -416,6 +451,20 @@
     <Compile Include="BanHang\BanHangUserControl.ascx.designer.cs">
       <DependentUpon>BanHangUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="BanHang\SanPham\DanhSachSanPham.ascx.cs">
+      <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\SanPham\DanhSachSanPham.ascx.designer.cs">
+      <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\TrangChu.ascx.cs">
+      <DependentUpon>TrangChu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\TrangChu.ascx.designer.cs">
+      <DependentUpon>TrangChu.ascx</DependentUpon>
+    </Compile>
     <Compile Include="DAO\DonHangDAO.cs" />
     <Compile Include="GiaoHang.aspx.cs">
       <DependentUpon>GiaoHang.aspx</DependentUpon>
@@ -503,6 +552,8 @@
     <Folder Include="css\Web\assets\100002\fonts\fontawesome\fonts\" />
     <Folder Include="css\Web\assets\100002\js\bootstrap\css\github.com\necolas\" />
     <Folder Include="css\Web\hstatic.net\817\1000069817\1000098314\" />
+    <Folder Include="css\Web\Uploads\shop2198\images\banner\" />
+    <Folder Include="css\Web\Uploads\shop2198\images\news\" />
     <Folder Include="pic\" />
   </ItemGroup>
   <PropertyGroup>
