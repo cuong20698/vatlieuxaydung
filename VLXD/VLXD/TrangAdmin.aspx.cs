@@ -66,6 +66,9 @@ namespace VLXD
                 case "ThemSP":
                     lblLink2.Text = "Thêm sản phẩm";
                     break;
+                case "SuaSP":
+                    lblLink2.Text = "Sửa sản phẩm";
+                    break;
                 case "DSKH":
                     lblLink2.Text = "Danh sách khách hàng";
                     break;

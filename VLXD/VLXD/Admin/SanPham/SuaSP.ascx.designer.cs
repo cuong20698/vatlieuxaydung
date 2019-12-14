@@ -10,7 +10,7 @@
 namespace VLXD.Admin.SanPham {
     
     
-    public partial class ThemSP {
+    public partial class SuaSP {
         
         /// <summary>
         /// txtMaSP control.
@@ -31,6 +31,24 @@ namespace VLXD.Admin.SanPham {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtTenSP;
         
         /// <summary>
+        /// lbhinhanh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbhinhanh;
+        
+        /// <summary>
+        /// txtloaisp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtloaisp;
+        
+        /// <summary>
         /// txtGia control.
         /// </summary>
         /// <remarks>
@@ -40,13 +58,13 @@ namespace VLXD.Admin.SanPham {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtGia;
         
         /// <summary>
-        /// fUpload control.
+        /// txtSoluong control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fUpload;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSoluong;
         
         /// <summary>
         /// txtMota control.
@@ -58,22 +76,13 @@ namespace VLXD.Admin.SanPham {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtMota;
         
         /// <summary>
-        /// ddrloai control.
+        /// btncapnhat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddrloai;
-        
-        /// <summary>
-        /// btnthemmoi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnthemmoi;
+        protected global::System.Web.UI.WebControls.Button btncapnhat;
         
         /// <summary>
         /// lbThongBao control.

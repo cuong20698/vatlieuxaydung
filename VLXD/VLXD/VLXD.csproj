@@ -99,6 +99,7 @@
     <Content Include="Admin\KhachHang\DanhSachKH.ascx" />
     <Content Include="Admin\SanPham\DanhSachLoai.ascx" />
     <Content Include="Admin\SanPham\DanhSachSanPham.ascx" />
+    <Content Include="Admin\SanPham\SuaSP.ascx" />
     <Content Include="Admin\SanPham\ThemSP.ascx" />
     <Content Include="Admin\SanPham\XoaLoaiSP.ascx" />
     <Content Include="Admin\TaiKhoan\ChinhSuaTaiKhoan.ascx" />
@@ -267,6 +268,13 @@
     </Compile>
     <Compile Include="Admin\SanPham\DanhSachSanPham.ascx.designer.cs">
       <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SanPham\SuaSP.ascx.cs">
+      <DependentUpon>SuaSP.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SanPham\SuaSP.ascx.designer.cs">
+      <DependentUpon>SuaSP.ascx</DependentUpon>
     </Compile>
     <Compile Include="Admin\SanPham\ThemSP.ascx.cs">
       <DependentUpon>ThemSP.ascx</DependentUpon>

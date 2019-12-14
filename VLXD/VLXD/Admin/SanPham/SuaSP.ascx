@@ -1,5 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ThemSP.ascx.cs" Inherits="VLXD.Admin.SanPham.ThemSP" %>
-<!-- Area Chart Example-->
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SuaSP.ascx.cs" Inherits="VLXD.Admin.SanPham.SuaSP" %>
 <style>
     .TieuDe {
         text-align: center;
@@ -26,7 +25,7 @@
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-chart-area"></i>
-        Thêm sản phẩm
+        Sửa sản phẩm
     </div>
     <div class="card-body">
             <div class="main-tsp">
@@ -34,13 +33,25 @@
                     <tr>
                         <td>Mã sản phẩm:</td>
                         <td>
-                            <input type="text" class="text-tsp" id="txtMaSP" runat="server"  required/>
+                            <input type="text" class="text-tsp" id="txtMaSP" runat="server"   readonly/>
                         </td>
                     </tr>
                     <tr>
                         <td>Tên sản phẩm:</td>
                         <td>
-                            <input type="text" class="text-tsp" id="txtTenSP" runat="server"  required/>
+                            <input type="text" class="text-tsp" id="txtTenSP" runat="server"  readonly/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Hình ảnh:</td>
+                        <td>
+                            <asp:Label ID="lbhinhanh" runat="server" Text="Label"></asp:Label>
+                    </tr>
+                    <tr>
+                        <td>Loại sản phẩm:</td>
+                        <td>
+                            <input type="text" class="text-tsp" id="txtloaisp" runat="server" readonly/>
                         </td>
                     </tr>
                     <tr>
@@ -50,28 +61,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Hình ảnh:</td>
+                        <td>Số lượng:</td>
                         <td>
-                            <asp:FileUpload ID="fUpload" runat="server" Width="250px" Height="35px" />
+                            <input type="text" class="text-tsp" id="txtSoluong" runat="server"  required/>
                         </td>
-                        <td>&nbsp;</td>
                     </tr>
                     <tr>
                         <td>Mô tả:</td>
                         <td>
-                            <input type="text" class="text-tsp" id="txtMota" runat="server" required />
+                            <input type="text" class="text-tsp" id="txtMota" runat="server" />
                         </td>
                     </tr>
-                    <tr>
-                        <td>Loại sản phẩm:</td>
-                        <td>
-                            <asp:DropDownList class="text-tsp" ID="ddrloai" runat="server"></asp:DropDownList>
-                        </td>
-                    </tr>
+                    
                     <tr >
                         <td></td>
                         <td colspan="2" >
-                        <asp:Button class="btn-form" ID="btnthemmoi" runat="server" Text="Thêm mới" OnClick="btnthemmoi_Click"/>
+                        <asp:Button class="btn-form" ID="btncapnhat" runat="server" Text="Cập nhật" OnClick="btncapnhat_Click" Width="135px" />
                         </td>
                     </tr>
                     <tr>
@@ -83,3 +88,4 @@
             </div>
     </div>
 </div>
+
