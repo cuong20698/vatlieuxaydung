@@ -22,6 +22,15 @@ namespace VLXD.Admin.SanPham {
         protected global::System.Web.UI.WebControls.Image imgSP;
         
         /// <summary>
+        /// txtMaSP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtMaSP;
+        
+        /// <summary>
         /// txtTenSP control.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,13 @@ namespace VLXD.Admin.SanPham {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtTenSP;
         
         /// <summary>
-        /// Text1 control.
+        /// txtGia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtGia;
         
         /// <summary>
         /// fUpload control.
@@ -58,21 +67,48 @@ namespace VLXD.Admin.SanPham {
         protected global::System.Web.UI.WebControls.Button btnUpFile;
         
         /// <summary>
-        /// Text2 control.
+        /// txtsp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtsp;
         
         /// <summary>
-        /// Text3 control.
+        /// txtMota control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text3;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtMota;
+        
+        /// <summary>
+        /// ddrloai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddrloai;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
+        /// lbThongBao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbThongBao;
     }
 }

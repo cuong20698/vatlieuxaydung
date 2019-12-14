@@ -13,15 +13,21 @@
                         <td rowspan="10" width="300px">
                             <asp:Image CssClass="imgThem" ID="imgSP" runat="server" />
                         </td>
+                        <td>Mã sản phẩm:</td>
+                        <td>
+                            <input type="text" class="text-tsp" id="txtMaSP" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
                         <td>Tên sản phẩm:</td>
                         <td>
                             <input type="text" class="text-tsp" id="txtTenSP" runat="server" />
                         </td>
                     </tr>
                     <tr>
-                        <td>Giá sản phẩm</td>
+                        <td>Đơn giá:</td>
                         <td>
-                            <input type="text" class="text-tsp" id="Text1" runat="server" />
+                            <input type="text" class="text-tsp" id="txtGia" runat="server" />
                         </td>
                     </tr>
                     <tr>
@@ -33,17 +39,36 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>Mã sản phẩm:</td>
+                        <td>Sản phẩm nổi bật:</td>
                         <td>
-                            <input type="text" class="text-tsp" id="Text2" runat="server" />
+                            <input type="text" class="text-tsp" id="txtsp" runat="server" />
                         </td>
                     </tr>
                     <tr>
-                        <td>Mã sản phẩm:</td>
+                        <td>Mô tả:</td>
                         <td>
-                            <input type="text" class="text-tsp" id="Text3" runat="server" />
+                            <input type="text" class="text-tsp" id="txtMota" runat="server" />
                         </td>
                     </tr>
+                    <tr>
+                        <td>Loại sản phẩm:</td>
+                        <td>
+                            <asp:DropDownList class="text-tsp" ID="ddrloai" runat="server"></asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Button" />
+                    </td>
+                    </tr>
+                    <tr>
+                    <td><span></span></td>
+                    <td>
+                        <asp:Label ID="lbThongBao" runat="server" class="LbThongBao"></asp:Label>
+                    </td>
+        <td></td>
+    </tr> 
                 </table>
             </div>
         </form>

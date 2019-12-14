@@ -503,7 +503,7 @@
     <Compile Include="Entity\LienHe.cs" />
     <Compile Include="Entity\NguoiDung.cs" />
     <Compile Include="Entity\Menu.cs" />
-    <Compile Include="Entity\SanPham.cs" />
+    <Compile Include="Entity\SP.cs" />
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

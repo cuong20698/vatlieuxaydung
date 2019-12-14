@@ -42,7 +42,11 @@ namespace VLXD.DAO
 
         public bool insert(DanhMucSP dm)
         {
+<<<<<<< HEAD
             string query = "INSERT INTO DanhMucSP VALUES(N'"+dm.name+"',1)";
+=======
+            string query = "INSERT INTO DanhMucSP(Name,HoatDong) VALUES(N'"+dm.name+"','"+dm.hoatDong+"')";
+>>>>>>> 15481781ac91c3d0e55934382abbffe8f9196379
             using (SqlConnection conn = new SqlConnection(connectString)) {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(query, conn);
