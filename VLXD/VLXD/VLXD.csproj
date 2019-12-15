@@ -99,7 +99,6 @@
     <Content Include="Admin\KhachHang\DanhSachKH.ascx" />
     <Content Include="Admin\SanPham\DanhSachLoai.ascx" />
     <Content Include="Admin\SanPham\DanhSachSanPham.ascx" />
-    <Content Include="Admin\SanPham\SuaSP.ascx" />
     <Content Include="Admin\SanPham\ThemSP.ascx" />
     <Content Include="Admin\SanPham\XoaLoaiSP.ascx" />
     <Content Include="Admin\TaiKhoan\ChinhSuaTaiKhoan.ascx" />
@@ -107,7 +106,8 @@
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
     <Content Include="BanHang\BanHangUserControl.ascx" />
-    <Content Include="BanHang\SanPham\DanhSachSanPham.ascx" />
+    <Content Include="BanHang\GioHang\GioHang.ascx" />
+    <Content Include="BanHang\SanPham\SanPham.ascx" />
     <Content Include="BanHang\TrangChu.ascx" />
     <Content Include="css\Web\app\appMain.js" />
     <Content Include="css\Web\app\controllers\moduleController.js" />
@@ -117,6 +117,7 @@
     <Content Include="css\Web\app\services\ajaxServices.js" />
     <Content Include="css\Web\app\services\alertsServices.js" />
     <Content Include="css\Web\app\services\moduleServices.js" />
+    <Content Include="css\Web\app\services\productServices.js" />
     <Content Include="css\Web\assets\100002\css\animate.css" />
     <Content Include="css\Web\assets\100002\css\flexslider.css" />
     <Content Include="css\Web\assets\100002\css\images\bx_loader.gif" />
@@ -124,16 +125,25 @@
     <Content Include="css\Web\assets\100002\css\reset.css" />
     <Content Include="css\Web\assets\100002\css\select2.min.css" />
     <Content Include="css\Web\assets\100002\fonts\fontawesome\css\font-awesome.min.css" />
-    <Content Include="css\Web\assets\100002\img\trademark_1.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_10.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_2.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_3.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_4.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_5.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_6.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_7.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_8.jpg_-1512461186.jpg" />
-    <Content Include="css\Web\assets\100002\img\trademark_9.jpg_-1512461186.jpg" />
+    <Content Include="css\Web\assets\100002\img\ajax-loader.gif" />
+    <Content Include="css\Web\assets\100002\img\banner-botom1.jpg" />
+    <Content Include="css\Web\assets\100002\img\banner-bottom2.jpg" />
+    <Content Include="css\Web\assets\100002\img\icon-s1.jpg" />
+    <Content Include="css\Web\assets\100002\img\icon-s2.jpg" />
+    <Content Include="css\Web\assets\100002\img\icon-s3.jpg" />
+    <Content Include="css\Web\assets\100002\img\icon-s4.jpg" />
+    <Content Include="css\Web\assets\100002\img\icon-s5.jpg" />
+    <Content Include="css\Web\assets\100002\img\icon-s6.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_1.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_10.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_2.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_3.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_4.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_5.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_6.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_7.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_8.jpg" />
+    <Content Include="css\Web\assets\100002\img\trademark_9.jpg" />
     <Content Include="css\Web\assets\100002\js\api.jquery.min.js" />
     <Content Include="css\Web\assets\100002\js\bootstrap\css\bootstrap.min.css" />
     <Content Include="css\Web\assets\100002\js\bootstrap\js\bootstrap.min.js" />
@@ -173,9 +183,13 @@
     <Content Include="css\Web\assets\100002\js\owl.carousel\owl.carousel.min.js" />
     <Content Include="css\Web\assets\100002\js\select2.min.js" />
     <Content Include="css\Web\assets\100002\js\theme-script.js" />
-    <Content Include="css\Web\css\img\hd-login.png" />
-    <Content Include="css\Web\css\img\icon-cart-round.png" />
-    <Content Include="css\Web\css\img\notify-right.png" />
+    <Content Include="css\Web\css\images\grid-view-bg.png" />
+    <Content Include="css\Web\css\images\hd-login.png" />
+    <Content Include="css\Web\css\images\icon-cart-option2.png" />
+    <Content Include="css\Web\css\images\icon-cart-round.png" />
+    <Content Include="css\Web\css\images\list-view-bg.png" />
+    <Content Include="css\Web\css\images\notify-right.png" />
+    <Content Include="css\Web\css\images\scroll.png" />
     <Content Include="css\Web\css\responsive.css" />
     <Content Include="css\Web\css\style.css" />
     <Content Include="css\Web\Images\ajax-loader-main.gif" />
@@ -234,7 +248,9 @@
     <Content Include="css\Web\Uploads\shop2198\images\slider\banner_silder_2.jpg" />
     <Content Include="css\Web\Uploads\shop2198\images\slider\banner_silder_3.jpg" />
     <Content Include="css\Web\Uploads\shop2198\images\slider\banner_silder_4.jpg" />
+    <Content Include="css\Web\Uploads\shop2198\images\slider\banner_slider_5.jpg" />
     <Content Include="GiaoHang.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="TatHoatDong.aspx" />
     <Content Include="css\Admin\css\ThemSP.css" />
     <Content Include="css\Admin\vendor\datatables\dataTables.bootstrap4.css" />
@@ -403,13 +419,6 @@
     <Compile Include="Admin\SanPham\DanhSachSanPham.ascx.designer.cs">
       <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\SanPham\SuaSP.ascx.cs">
-      <DependentUpon>SuaSP.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\SanPham\SuaSP.ascx.designer.cs">
-      <DependentUpon>SuaSP.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\SanPham\ThemSP.ascx.cs">
       <DependentUpon>ThemSP.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -459,12 +468,19 @@
     <Compile Include="BanHang\BanHangUserControl.ascx.designer.cs">
       <DependentUpon>BanHangUserControl.ascx</DependentUpon>
     </Compile>
-    <Compile Include="BanHang\SanPham\DanhSachSanPham.ascx.cs">
-      <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+    <Compile Include="BanHang\GioHang\GioHang.ascx.cs">
+      <DependentUpon>GioHang.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BanHang\SanPham\DanhSachSanPham.ascx.designer.cs">
-      <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+    <Compile Include="BanHang\GioHang\GioHang.ascx.designer.cs">
+      <DependentUpon>GioHang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\SanPham\SanPham.ascx.cs">
+      <DependentUpon>SanPham.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\SanPham\SanPham.ascx.designer.cs">
+      <DependentUpon>SanPham.ascx</DependentUpon>
     </Compile>
     <Compile Include="BanHang\TrangChu.ascx.cs">
       <DependentUpon>TrangChu.ascx</DependentUpon>
@@ -480,6 +496,13 @@
     </Compile>
     <Compile Include="GiaoHang.aspx.designer.cs">
       <DependentUpon>GiaoHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="TatHoatDong.aspx.cs">
       <DependentUpon>TatHoatDong.aspx</DependentUpon>

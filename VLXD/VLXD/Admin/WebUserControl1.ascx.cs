@@ -38,9 +38,6 @@ namespace VLXD.Admin
                 case "ThemSP":
                     PlaceHolder1.Controls.Add(LoadControl("SanPham/ThemSP.ascx"));
                     break;
-                case "SuaSP":
-                    PlaceHolder1.Controls.Add(LoadControl("SanPham/SuaSP.ascx"));
-                    break;
                 case "DSKH":
                     PlaceHolder1.Controls.Add(LoadControl("KhachHang/DanhSachKH.ascx"));
                     break;

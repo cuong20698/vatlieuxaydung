@@ -5147,7 +5147,7 @@ span.notify-left{
 	font-size: 0;
 }
 .group-button-header .btn-cart{
-	background: url("../css/img/icon-cart-round.png") no-repeat center center;
+	background: url("images/icon-cart-round.png") no-repeat center center;
 	position: relative;
 }
 .group-button-header .btn-cart:after{
@@ -5163,13 +5163,13 @@ span.notify-left{
 	right: -12px;
 }
 .group-button-header .btn-heart{
-	background: url("../css/img/hd-login.png") no-repeat center center;
+	background: url("images/hd-login.png") no-repeat center center;
 	text-indent: -999px;
 	display: inline-block;
 	font-size: 0;
 }
 .group-button-header .btn-compare{
-	background: url("../css/img/notify-right.png") no-repeat center center;
+	background: url("images/notify-right.png") no-repeat center center;
 	text-indent: -999px;
 	margin-right: 0;
 	display: inline-block;

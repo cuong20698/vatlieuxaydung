@@ -116,7 +116,7 @@ body{
 	height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-	background: #ffffff url('images/scroll.png?v=37') 50% 50% no-repeat;
+	background: #ffffff url('images/scroll.png') 50% 50% no-repeat;
 	border: 0px none #ffffff;
 	border-radius: 50px;
 	-webkit-box-shadow: 0px 0px 16px -5px rgba(181,168,181,1);
@@ -124,10 +124,10 @@ body{
 	box-shadow: 0px 0px 16px -5px rgba(181,168,181,1);
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: #ffffff url('images/scroll.png?v=37') 50% 50% no-repeat;
+	background: #ffffff url('images/scroll.png') 50% 50% no-repeat;
 }
 ::-webkit-scrollbar-thumb:active {
-	background: #ffffff url('images/scroll.png?v=37') 50% 50% no-repeat;
+	background: #ffffff url('images/scroll.png') 50% 50% no-repeat;
 }
 ::-webkit-scrollbar-track {
 	background: #ebebeb;
@@ -606,7 +606,7 @@ img.alignright{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background:#fff url('images/Preloader_4.gif?v=37') 50% 50% no-repeat;
+	background:#fff url('images/Preloader_4.gif') 50% 50% no-repeat;
 }
 
 .banner-opacity{
@@ -787,10 +787,10 @@ img.alignright{
 	display: block;
 }
 .icon-up{
-	background: url("images/up.png?v=37") no-repeat center center;
+	background: url("images/up.png") no-repeat center center;
 }
 .icon-down{
-	background: url("images/down.png?v=37") no-repeat center center;
+	background: url("images/down.png") no-repeat center center;
 }
 
 .image-hover2 a{
@@ -889,7 +889,7 @@ img.alignright{
 .top-banner .btn-close{
 	width: 24px;
 	height: 24px;
-	background: #2d2c2e url("images/btn-close.png?v=37") no-repeat;
+	background: #2d2c2e url("images/btn-close.png") no-repeat;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1337,7 +1337,7 @@ img.alignright{
 	content: '';
 	width: 41px;
 	height: 41px;
-	background: #ff3366 url('images/cart.png?v=37') no-repeat center center;
+	background: #ff3366 url('images/cart.png') no-repeat center center;
 	position: absolute;
 	top: -1px;
 	right: -1px;
@@ -1401,7 +1401,7 @@ img.alignright{
 }
 .cart-block .cart-block-content  .product-info .p-left .remove_link:after{
 	content: '';
-	background: url("images/delete_icon.png?v=37") no-repeat center center;
+	background: url("images/delete_icon.png") no-repeat center center;
 	font-size: 0;
 	height: 9px;
 	width: 9px;
@@ -1481,12 +1481,12 @@ img.alignright{
   z-index: 1;
 }
 span.notify-left{
-	background: url('images/notify.png?v=37') no-repeat;
+	background: url('images/notify.png') no-repeat;
 	right: 25px;
 	top: -8px;
 }
 .cart-items-count,span.notify-right{
-	background: url('images/notify-right.png?v=37') no-repeat;
+	background: url('images/notify-right.png') no-repeat;
 	right: 0px;
 	top: -7px;
 }
@@ -1864,10 +1864,10 @@ span.notify-left{
 }
 .nav-menu .nav>li>a{
 	padding: 15px 25px;
-	background: url('images/kak.png?v=37') no-repeat right center;
+	background: url('images/kak.png') no-repeat right center;
 }
 .nav-menu .navbar-toggle{
-	background: url('images/bar.png?v=37') no-repeat left center;
+	background: url('images/bar.png') no-repeat left center;
 	height: 50px;
 	margin: 0;
 	padding-right: 3px;
@@ -1901,7 +1901,7 @@ span.notify-left{
 	position: absolute;
 	top: 0;
 	right: 0;
-	background: url("images/floor-elevator.png?v=37") no-repeat left center;
+	background: url("images/floor-elevator.png") no-repeat left center;
 	padding-left: 38px;
 	padding-right: 22px;
 	font-size: 20px;
@@ -2190,7 +2190,7 @@ span.notify-left{
 }
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(images/bx_loader.gif?v=37) center center no-repeat #fff;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
 }
 /*---------------
 [6. Page top]
@@ -2207,7 +2207,7 @@ span.notify-left{
 
 .latest-deals .latest-deal-title{
 	height: 54px;
-	background: url("images/latest-deal-title.png?v=37") no-repeat left center;
+	background: url("images/latest-deal-title.png") no-repeat left center;
 	padding: 0;
 	margin: 0;
 	line-height: 54px;
@@ -2543,7 +2543,7 @@ span.notify-left{
 	background-color: rgba(255,51,102,0.5);
 }
 .product-list li .add-to-cart a{
-	background: url("images/add-cart.png?v=37") no-repeat left center;
+	background: url("images/add-cart.png") no-repeat left center;
 	height: 32px;
 	line-height: 32px;
 	color: #fff;
@@ -2606,7 +2606,7 @@ span.notify-left{
 .product-list li .price-percent-reduction2{
 	width: 52px;
 	height: 44px;
-	background: url("images/price-percent-br.png?v=37") no-repeat center center;
+	background: url("images/price-percent-br.png") no-repeat center center;
 	color: #fff;
 	line-height: normal !important;
 	text-align: center;
@@ -2801,7 +2801,7 @@ span.notify-left{
 	position: absolute;
 	right: -5px;
 	top: -5px;
-	background: url('images/featured2.png?v=37') no-repeat;
+	background: url('images/featured2.png') no-repeat;
 	width: 75px;
 	height: 75px;
 	z-index: 100;
@@ -3095,7 +3095,7 @@ span.notify-left{
 
 .cate-link span {
 	padding-right: 12px;
-	background: url('images/cate-readmore-arrow.png?v=37') right 2px top 50%  no-repeat;
+	background: url('images/cate-readmore-arrow.png') right 2px top 50%  no-repeat;
 	text-transform: uppercase;
 	font-size: 10px;
 	line-height: 20px;
@@ -3495,7 +3495,7 @@ span.notify-left{
 .layered-filter-price .slider-range-price .ui-slider-handle{
 	border: none;
 	border-radius: 0;
-	background: url("images/range-icon.png?v=37") no-repeat;
+	background: url("images/range-icon.png") no-repeat;
 	cursor: pointer;
 }
 
@@ -3521,12 +3521,12 @@ span.notify-left{
 	width:12px;
 	height:12px;
 	margin-right: 13px;
-	background: url("images/checkbox.png?v=37") no-repeat;
+	background: url("images/checkbox.png") no-repeat;
 	padding: 0;
 	border: none;
 }
 .check-box-list input[type="checkbox"]:checked + label span.button{
-	background: #ff3366 url("images/checked.png?v=37") no-repeat center center;
+	background: #ff3366 url("images/checked.png") no-repeat center center;
 
 
 }
@@ -3698,7 +3698,7 @@ span.notify-left{
 	width: 16px;
 	height: 100%;
 	float: left;
-	background:url("images/cart.png?v=37") no-repeat scroll left center;
+	background:url("images/cart.png") no-repeat scroll left center;
 	content: " ";
 	margin-right: 15px;
 }
@@ -3878,7 +3878,7 @@ span.notify-left{
 	float: left;
 	cursor: pointer;
 	text-indent: -9999px;
-	background: url("images/grid-view-bg.png?v=37") 0 0 #666;
+	background: url("images/grid-view-bg.png") 0 0 #666;
 	border: none;
 	float: left;
 }
@@ -3889,7 +3889,7 @@ span.notify-left{
 	float: left;
 	cursor: pointer;
 	text-indent: -9999px;
-	background: url("images/list-view-bg.png?v=37") 0 0 #666;
+	background: url("images/list-view-bg.png") 0 0 #666;
 	border: none;
 	float: right;
 }
@@ -3953,7 +3953,7 @@ span.notify-left{
 }
 .product-list.list .add-to-cart a{
 	height: 36px;
-	background: url("images/cart.png?v=37") no-repeat left center;
+	background: url("images/cart.png") no-repeat left center;
 	margin-left: 5px;
 	padding-left: 25px;
 	width: 100%;
@@ -4032,7 +4032,7 @@ span.notify-left{
 	content: '';
 	width: 16px;
 	height: 100%;
-	background:url("images/cart.png?v=37") no-repeat left center;
+	background:url("images/cart.png") no-repeat left center;
 	float: left;
 	margin-right: 10px;
 }
@@ -4059,7 +4059,7 @@ span.notify-left{
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background: url("images/dropdown.png?v=37") no-repeat right center #fafafa;
+	background: url("images/dropdown.png") no-repeat right center #fafafa;
 	padding-right: 20px;
 	display: inline-block;
 	font-size: 13px;
@@ -4371,7 +4371,7 @@ span.notify-left{
 	line-height: 23px;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	background: #FAFAFA url("images/dropdown.png?v=37") no-repeat scroll right center;
+	background: #FAFAFA url("images/dropdown.png") no-repeat scroll right center;
 	display: inline-block;
 	border: 1px solid #eaeaea;
 	min-width: 95px;
@@ -5166,7 +5166,7 @@ span.notify-left{
 	font-size: 0;
 }
 .group-button-header .btn-compare{
-	background: url("images/icon-compare-round.png?v=37") no-repeat center center;
+	background: url("images/icon-compare-round.png") no-repeat center center;
 	text-indent: -999px;
 	margin-right: 0;
 	display: inline-block;
@@ -5806,7 +5806,7 @@ span.notify-left{
 .count-down-time2 .icon-clock{
 	width: 23px;
 	height: 26px;
-	background: url("images/icon-clock.png?v=37" ) no-repeat center center;
+	background: url("images/icon-clock.png" ) no-repeat center center;
 	display: inline-block;
 	margin-top: 5px;
 }
@@ -6083,7 +6083,7 @@ span.notify-left{
 	right: 5px;
 	color: #fff;
 	font-weight: normal;
-	background: url("images/icon-angle-right.png?v=37") no-repeat right center;
+	background: url("images/icon-angle-right.png") no-repeat right center;
 	top: 50%;
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -6213,10 +6213,10 @@ span.notify-left{
 	font-size: 48px;
 }
 .option2 .product-featured .owl-next{
-	background: url("images/next.png?v=37") no-repeat center center;
+	background: url("images/next.png") no-repeat center center;
 }
 .option2 .product-featured .owl-prev{
-	background: url("images/prev.png?v=37") no-repeat center center;
+	background: url("images/prev.png") no-repeat center center;
 }
 .option2 .product-featured .owl-prev .fa, 
 .option2 .product-featured .owl-next .fa{
@@ -6225,11 +6225,11 @@ span.notify-left{
 	display: none;
 }
 .option2 .product-featured .owl-prev:hover{
-	background: url("images/prev.png?v=37") no-repeat center center;
+	background: url("images/prev.png") no-repeat center center;
 }
 
 .option2 .product-featured .owl-next:hover{
-	background: url("images/next.png?v=37") no-repeat center center;
+	background: url("images/next.png") no-repeat center center;
 }
 
 .option2 .product-featured .deal-product{
@@ -6288,7 +6288,7 @@ span.notify-left{
 	text-decoration: line-through;
 }
 .option2 .product-featured .deal-product .price .sale-price{
-	background: url("images/sale-bg.png?v=37") no-repeat;
+	background: url("images/sale-bg.png") no-repeat;
 	color: #fff;
 	padding: 0 7px;
 }
@@ -6375,7 +6375,7 @@ span.notify-left{
 	opacity: 1;
 }
 .option2 .product-list li .add-to-cart a {
-	background: url("images/icon-cart-option2.png?v=37") no-repeat left center;
+	background: url("images/icon-cart-option2.png") no-repeat left center;
 }
 .option2 .product-list li .quick-view a.compare:before{
 	content: "\f066";
@@ -7031,7 +7031,7 @@ input#quantity {
 	margin: 20px 0px;
 }
 a.btn-cart {
-	background-image: url('images/add-cart.png?v=37') !important;
+	background-image: url('images/add-cart.png') !important;
 	background-repeat: no-repeat !important;
 	background-position: 5px !important;
 	padding: 10px 30px 10px 50px;
@@ -7249,7 +7249,7 @@ ul.info-address li i {
 }
 /*========================================POPUP=========================================*/
 #popup-newletter {
-	background: url(images/pnewletter_bg.jpg?v=37) no-repeat scroll bottom right #fff;
+	background: url(images/pnewletter_bg.jpg) no-repeat scroll bottom right #fff;
 	text-align: left;
 	padding: 20px;
 	min-width: 621px;
@@ -7378,10 +7378,10 @@ ul.info-address li i {
 	font-size: 0px;
 }
 .fancybox-overlay{
-	background: url('images/fancybox_overlay.png?v=37');
+	background: url('images/fancybox_overlay.png');
 }
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background: url('images/fancybox_sprite.png?v=37');
+	background: url('images/fancybox_sprite.png');
 }
 #popup-newletter .pnewle-message ul li:before {
 	content: "\f111";

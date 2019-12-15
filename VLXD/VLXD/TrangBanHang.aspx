@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../css/Web/assets100002/js/jquery-1.11.3.min.js"></script>
     <script src="../css/Web/assets100002/js/bootstrap/js/bootstrap.min.js"></script>
-    <!--<script src="../css/Web/assets100002/js/option_selection.min.js"></script>-->
-    <!--<script src="../css/Web/assets100002/js/api.jquery.min.js"></script>-->
+    <script src="../css/Web/assets100002/js/option_selection.min.js"></script>
+    <script src="../css/Web/assets100002/js/api.jquery.min.js"></script>
     <script src='../css/Web/assets100002/js/select2.min.js' type='text/javascript'></script>
     <script src='../css/Web/assets100002/js/jquery.bxslider.min.js' type='text/javascript'></script>
     <script src='../css/Web/assets100002/js/owl.carousel/owl.carousel.min.js' type='text/javascript'></script>
@@ -37,7 +37,7 @@
     <script src='../css/Web/assets100002/js/jquery.cookie.js' type='text/javascript'></script>
     <script src='../css/Web/assets100002/js/jquery.countdown.min.js' type='text/javascript'></script>
     <script src='../css/Web/assets100002/js/fancybox/jquery.fancybox.js' type='text/javascript'></script>
-    <!--<script src='img/jquery.lazyload.js?v=42' type='text/javascript'></script> -->
+    <script src='../css/Web/img/jquery.lazyload.js?v=42' type='text/javascript'></script>
     <script src='../css/Web/assets100002/js/jquery.flexslider-min.js' type='text/javascript'></script>
     <script src='../css/Web/assets100002/js/jquery.plugin.js' type='text/javascript'></script>
     <script src='../css/Web/assets100002/js/jquery.actual.min.js' type='text/javascript'></script>
@@ -46,7 +46,7 @@
     <script src="../css/Web/assets100002/js/html5shiv.js"></script>
     <script src="../css/Web/assets100002/js/jquery-migrate-1.2.0.min.js"></script>
     <script src='../css/Web/assets100002/js/jquery.touchSwipe.min.js' type='text/javascript'></script>
-    <!--<script src="../css/Web/assets100002/js/haravan.plugin.1.0.min.js"></script>-->
+    <script src="../css/Web/assets100002/js/haravan.plugin.1.0.min.js"></script>
     <script async="" defer="defer" data-target=".product-resize" data-parent=".products-resize" data-img-box=".image-resize" src="../css/Web/assets100002/js/fixheightproductv2.js"></script>
     <!--------------CSS----------->
     <link href="../css/Web/assets/100002/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -78,10 +78,6 @@
     <script src='../css/Web/assets100002/js/theme-script.js' type='text/javascript'></script>
     <link href="../css/Web/css/style.css" rel="stylesheet" type="text/css" />
     <link href="../css/Web/css/responsive.css" rel="stylesheet" type="text/css" />
-
-
-
-
 </head>
 <body ng-app="appMain" style="" class="home option2">
     <div class="wrapper page-home">
@@ -95,7 +91,7 @@
                             </ul>
                             <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
                                 <li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i>Kiểm tra đơn hàng</a></li>
-                                <li class="order-cart"><a href="/gio-hang.html"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+                                <li class="order-cart"><a href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
                                 <li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i>Đăng nhập </a></li>
                                 <li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i>Đăng ký </a></li>
                             </ul>
@@ -122,7 +118,7 @@
                                     <div class="inner-toggle">
                                         <ul class="links">
                                             <li><a id="mobile-wishlist-total" href="/kiem-tra-don-hang.html" class="wishlist"><i class="fa fa-pencil-square-o"></i>Kiểm tra đơn hàng</a></li>
-                                            <li><a href="/gio-hang.html" class="shoppingcart"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+                                            <li><a href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH" class="shoppingcart"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -157,7 +153,7 @@
                     <div class="col-xs-5 col-sm-2 group-button-header new-login">
                         <a title="Đăng nhập" href="/dang-nhap.html" class="btn-heart"></a>
                         <div class="btn-cart" id="cart-block">
-                            <a title="My cart" href="/gio-hang.html">Giỏ hàng</a>
+                            <a title="My cart" href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH">Giỏ hàng</a>
                             <span class="text-show">Giỏ hàng</span>
                             <span class="notify notify-right">0</span>
                         </div>
@@ -176,8 +172,8 @@
                                     <span class="btn-open-mobile pull-right home-page" onclick="showMenu()"><i class="fa fa-bars"></i></span>
                                 </h4>
                                 <div class="vertical-menu-content" id="vertical-menu-content">
-                                    <ul class='vertical-menu-list'>
-                                        <li class="has-child level0">
+                                    <ul class='vertical-menu-list' style="margin:0; padding:0;">
+                                        <%--<li class="has-child level0">
                                             <a class='dropdown-toggle has-category parent' href='/san-pham/thoi-trang-40412'>
                                                 <span>Thời trang</span>
                                             </a>
@@ -187,7 +183,8 @@
                                                 <li class="level1"><a class='' href='/san-pham/ao-thun-40424'><span>Áo thun</span></a></li>
 
                                             </ul>
-                                        </li>
+                                        </li>--%>
+                                        <asp:Label class='vertical-menu-list' style="margin:0; padding:0;" ID="lblDMSP" runat="server"></asp:Label>
                                     </ul>
                                 </div>
                             </div>
@@ -205,7 +202,7 @@
                                         <ul class='menu t-menu nav'>
                                             <li class="level0"><a class='' href='/TrangBanHang.aspx?modul1=TrangChu'><span>Trang chủ</span></a></li>
                                             <li class="level0"><a class='' href='/gioi-thieu.html'><span>Giới thiệu</span></a></li>
-                                            <li class="level0"><a class='' href='/TrangBanHang.aspx?modul=SanPham?modul1=DSSP'><span>Sản phẩm</span></a></li>
+                                            <li class="level0"><a class='' href='/TrangBanHang.aspx?modul=TrangChu&modul1=SP'><span>Sản phẩm</span></a></li>
                                             <li class="level0"><a class='' href='/tin-tuc.html'><span>Tin tức</span></a></li>
                                             <li class="level0"><a class='' href='/lien-he.html'><span>Liên hệ</span></a></li>
                                         </ul>
@@ -222,7 +219,7 @@
 
                     <!-- CART ICON ON MMENU -->
                     <div id="shopping-cart-box-ontop">
-                        <a href="/gio-hang.html"></a>
+                        <a href="/TrangBanHang.aspx?modul=GioHang&modul1=GH"></a>
                         <span class="icon-cart-ontop"></span>
                         <span class="cart-items-count">0</span>
                         <span class="text">Giỏ hàng</span>
@@ -248,17 +245,6 @@
                     }
                     window.location = '/tim-kiem.html?key=' + key;
                 }
-            </script>
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    var str = location.href.toLowerCase();
-                    $("ul.menu li a").each(function () {
-                        if (str.indexOf(this.href.toLowerCase()) >= 0) {
-                            $("ul.menu li").removeClass("active");
-                            $(this).parent().addClass("active");
-                        }
-                    });
-                });
             </script>
         </div>
         <uc1:BanHangUserControl runat="server" ID="BanHangUserControl" />
@@ -356,25 +342,25 @@
                                 <li id="payment-methods">Phương thức thanh toán</li>
 
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_1.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_1.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_10.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_10.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_2.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_2.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_3.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_3.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_4.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_4.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_5.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_5.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_6.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_6.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_7.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_7.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_8.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_8.jpg" /></a></li>
                                 <li><a href="javascript:;">
-                                    <img src="../css/Web/assets/100002/img/trademark_9.jpg_-1512461186.jpg" /></a></li>
+                                    <img src="../css/Web/assets/100002/img/trademark_9.jpg" /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -389,8 +375,7 @@
 </body>
 </html>
 <script type="text/javascript">
-    $(".header-content").css({ "background": '' });
-    $("html").addClass('');
+    
     function showMenu() {
         document.getElementById("vertical-menu-content").classList.toggle('active');
     }
