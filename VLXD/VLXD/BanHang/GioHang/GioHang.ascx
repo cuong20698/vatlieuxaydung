@@ -26,34 +26,7 @@
                                 <li class="finish col-md-2 col-xs-12 col-sm-4"><span><i class="glyphicon glyphicon-ok"></i></span><span>Hoàn tất</span><span class="step-number"><a>3</a></span></li>
                             </ul>
                         </div>
-                        <div class="cart-block-info">
-                            <div class="cart-info table-responsive">
-                                <table class="table product-list">
-                                    <thead>
-                                        <tr>
-                                            <th></th>
-                                            <th>Tên sản phẩm</th>
-                                            <th>Giá</th>
-                                            <th>Số lượng</th>
-                                            <th>Thành tiền</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- ngRepeat: item in OrderDetails -->
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="clearfix text-right">
-                                <span><b>Tổng thanh toán:</b></span>
-                                <span class="pay-price ng-binding">0đ
-                                </span>
-                            </div>
-                            <div class="text-right">
-                                <a class="comeback" href="/index.aspx">Tiếp tục mua hàng</a>
-                                <a class="button-default" id="checkout" href="/thanh-toan.html">Tiến hành thanh toán</a>
-                            </div>
-                        </div>
+                        <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
                     </div>
                 </div>
             </div>

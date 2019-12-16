@@ -27,7 +27,7 @@ namespace VLXD.DAO
             throw new NotImplementedException();
         }
 
-        public DataTable getTable1(string query)
+        public DataTable getTableSP(string query)
         {
             using (SqlConnection conn = new SqlConnection(connectString))
             {

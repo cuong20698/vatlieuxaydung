@@ -12,7 +12,6 @@ namespace VLXD.Admin.TaiKhoan
 {
     public partial class DanhSachTaiKhoan : System.Web.UI.UserControl
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
             loadDSTK();
@@ -26,7 +25,7 @@ namespace VLXD.Admin.TaiKhoan
             int kt = (int)Session["idgroup"];
             if(kt == 1)
             {
-                off = "<a onclick='return Xoa();' href = '/TatHoatDong.aspx?ma=" + dt.Rows[1]["ID"].ToString() + @"'>Off</a>";
+                off = "<a onclick='return Xoa();' href = '/TatHoatDong.aspx?ma=" + dt.Rows[0]["ID"].ToString() + @"'>Off</a>";
             }
             for (int i = 0; i < dt.Rows.Count; i++) {
                 sb.Append(@"

@@ -49,7 +49,7 @@ namespace VLXD.BanHang.SanPham
                                             <a class='qv-e-button btn-quickview-1 search' title='Xem nhanh' href='#'></a>
                                         </div>
                                         <div class='add-to-cart'>
-                                            <a class='add-to-car' href='/TrangBanHang.aspx?modul=TrangChu&modul1=GH&ma=" + dt.Rows[i]["ID"] + @"'>Thêm vào giỏ</a>
+                                            <a class='add-to-car' href='/TrangBanHang.aspx?modul=TrangChu&modul1=GH&modul2=ThemDH&ma=" + dt.Rows[i]["ID"] + @"'>Thêm vào giỏ</a>
                                         </div>
                                     </div>
                                     <div class='right-block'>

@@ -91,7 +91,7 @@
                             </ul>
                             <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
                                 <li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i>Kiểm tra đơn hàng</a></li>
-                                <li class="order-cart"><a href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
+                                <li class="order-cart"><a href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH&modul2=DSDH"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
                                 <li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i>Đăng nhập </a></li>
                                 <li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i>Đăng ký </a></li>
                             </ul>
@@ -153,9 +153,10 @@
                     <div class="col-xs-5 col-sm-2 group-button-header new-login">
                         <a title="Đăng nhập" href="/dang-nhap.html" class="btn-heart"></a>
                         <div class="btn-cart" id="cart-block">
-                            <a title="My cart" href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH">Giỏ hàng</a>
+                            <a title="My cart" href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH&modul2=DSDH">Giỏ hàng</a>
                             <span class="text-show">Giỏ hàng</span>
-                            <span class="notify notify-right">0</span>
+                            <span class="notify notify-right">
+                                <asp:Label ID="lblSLDH" runat="server" Text=""></asp:Label></span>
                         </div>
                     </div>
                 </div>
@@ -202,7 +203,7 @@
                                         <ul class='menu t-menu nav'>
                                             <li class="level0"><a class='' href='/TrangBanHang.aspx?modul1=TrangChu'><span>Trang chủ</span></a></li>
                                             <li class="level0"><a class='' href='/gioi-thieu.html'><span>Giới thiệu</span></a></li>
-                                            <li class="level0"><a class='' href='/TrangBanHang.aspx?modul=TrangChu&modul1=SP'><span>Sản phẩm</span></a></li>
+                                            <li class="level0"><a class='' href='/TrangBanHang.aspx?modul=TrangChu&modul1=SP&modul2=DSSP'><span>Sản phẩm</span></a></li>
                                             <li class="level0"><a class='' href='/tin-tuc.html'><span>Tin tức</span></a></li>
                                             <li class="level0"><a class='' href='/lien-he.html'><span>Liên hệ</span></a></li>
                                         </ul>

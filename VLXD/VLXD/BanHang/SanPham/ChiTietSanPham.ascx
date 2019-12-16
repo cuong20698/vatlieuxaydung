@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ChiTietSanPham.ascx.cs" Inherits="VLXD.BanHang.SanPham.ChiTietSanPham" %>
+<form runat="server">
 <div id="product">
     <div class="main" style="background-color: white">
         <div class="container">
@@ -110,12 +111,15 @@
                                     <div class="quantity clearfix">
                                         <label>Số lượng</label>
                                         <div class="quantity-input">
-                                            <input type="number" value="1" class="text ng-pristine ng-untouched ng-valid">
+                                            <input id="txtSL" runat="server" type="number" value="1" min="1" class="text ng-pristine ng-untouched ng-valid">
                                         </div>
                                     </div>
-                                    <div class="action-cart ng-scope">
-                                        <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-shopping-cart"></i>Thêm giỏ hàng</a>
-                                    </div>
+                                   <%-- <asp:Label ID="lblThemGH" runat="server" Text=""></asp:Label>--%>
+                                    <div class='action-cart ng-scope'>
+                                            <i class='glyphicon glyphicon-shopping-cart' style="font-size:20px; padding:5px;"></i> 
+                                            <asp:Button class='btn btn-default' ID="btnThemGH" runat="server" Text="Thêm giỏ hàng" OnClick="btnThemGH_Click" />
+                                      
+                                    </div>          
                                     <!-- end ngIf: IsTrackingInventory==false||AllowPurchaseWhenSoldOut==true || (IsTrackingInventory&&AllowPurchaseWhenSoldOut==false&&Quantity>0) -->
                                     <!-- ngIf: IsTrackingInventory==true&&AllowPurchaseWhenSoldOut==false&&Quantity<=0 -->
                                     <div class="call">
@@ -214,4 +218,4 @@
         </div>
     </div>
 </div>
-
+</form>

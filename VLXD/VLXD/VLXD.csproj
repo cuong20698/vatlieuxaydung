@@ -106,7 +106,13 @@
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
     <Content Include="BanHang\BanHangUserControl.ascx" />
+    <Content Include="BanHang\GioHang\DanhSachDH.ascx" />
     <Content Include="BanHang\GioHang\GioHang.ascx" />
+    <Content Include="BanHang\GioHang\ThemDonHang.ascx" />
+    <Content Include="BanHang\GioHang\XoaDonHang.ascx" />
+    <Content Include="BanHang\SanPham\ChiTietSanPham.ascx" />
+    <Content Include="BanHang\SanPham\DanhSachSanPham.ascx" />
+    <Content Include="BanHang\SanPham\DanhSachSanPhamLoai.ascx" />
     <Content Include="BanHang\SanPham\SanPham.ascx" />
     <Content Include="BanHang\TrangChu.ascx" />
     <Content Include="css\Web\app\appMain.js" />
@@ -202,6 +208,8 @@
     <Content Include="css\Web\Scripts\common\login.js" />
     <Content Include="css\Web\Scripts\common\mycard.js" />
     <Content Include="css\Web\Scripts\lazyLoad\jquery.lazyload.min.js" />
+    <Content Include="css\Web\Scripts\smoothproducts\smoothproducts.css" />
+    <Content Include="css\Web\Scripts\smoothproducts\smoothproducts.js" />
     <Content Include="css\Web\Uploads\shop2198\images\icon\s1.png" />
     <Content Include="css\Web\Uploads\shop2198\images\icon\s11.png" />
     <Content Include="css\Web\Uploads\shop2198\images\icon\s12.png" />
@@ -215,6 +223,7 @@
     <Content Include="css\Web\Uploads\shop2198\images\icon\s9.png" />
     <Content Include="css\Web\Uploads\shop2198\images\logo1.png" />
     <Content Include="css\Web\Uploads\shop2198\images\logo2.png" />
+    <Content Include="css\Web\Uploads\shop2198\images\product\binhnuocnong.jpg" />
     <Content Include="css\Web\Uploads\shop2198\images\product\p35_large.jpg" />
     <Content Include="css\Web\Uploads\shop2198\images\product\p44_large.jpg" />
     <Content Include="css\Web\Uploads\shop2198\images\product\p49_large.jpg" />
@@ -251,6 +260,13 @@
     <Content Include="css\Web\Uploads\shop2198\images\slider\banner_slider_5.jpg" />
     <Content Include="GiaoHang.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="pic\aa.png" />
+    <Content Include="pic\ahihi.jpg" />
+    <Content Include="pic\laravel1.jpg" />
+    <Content Include="pic\pmnm.jpg" />
+    <Content Include="pic\Screenshot %281%29.png" />
+    <Content Include="pic\Screenshot %282%29.png" />
+    <Content Include="pic\vlxd.jpg" />
     <Content Include="TatHoatDong.aspx" />
     <Content Include="css\Admin\css\ThemSP.css" />
     <Content Include="css\Admin\vendor\datatables\dataTables.bootstrap4.css" />
@@ -468,12 +484,54 @@
     <Compile Include="BanHang\BanHangUserControl.ascx.designer.cs">
       <DependentUpon>BanHangUserControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="BanHang\GioHang\DanhSachDH.ascx.cs">
+      <DependentUpon>DanhSachDH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\GioHang\DanhSachDH.ascx.designer.cs">
+      <DependentUpon>DanhSachDH.ascx</DependentUpon>
+    </Compile>
     <Compile Include="BanHang\GioHang\GioHang.ascx.cs">
       <DependentUpon>GioHang.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BanHang\GioHang\GioHang.ascx.designer.cs">
       <DependentUpon>GioHang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\GioHang\ThemDonHang.ascx.cs">
+      <DependentUpon>ThemDonHang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\GioHang\ThemDonHang.ascx.designer.cs">
+      <DependentUpon>ThemDonHang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\GioHang\XoaDonHang.ascx.cs">
+      <DependentUpon>XoaDonHang.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\GioHang\XoaDonHang.ascx.designer.cs">
+      <DependentUpon>XoaDonHang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\SanPham\ChiTietSanPham.ascx.cs">
+      <DependentUpon>ChiTietSanPham.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\SanPham\ChiTietSanPham.ascx.designer.cs">
+      <DependentUpon>ChiTietSanPham.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\SanPham\DanhSachSanPham.ascx.cs">
+      <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\SanPham\DanhSachSanPham.ascx.designer.cs">
+      <DependentUpon>DanhSachSanPham.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\SanPham\DanhSachSanPhamLoai.ascx.cs">
+      <DependentUpon>DanhSachSanPhamLoai.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\SanPham\DanhSachSanPhamLoai.ascx.designer.cs">
+      <DependentUpon>DanhSachSanPhamLoai.ascx</DependentUpon>
     </Compile>
     <Compile Include="BanHang\SanPham\SanPham.ascx.cs">
       <DependentUpon>SanPham.ascx</DependentUpon>
@@ -583,9 +641,9 @@
     <Folder Include="css\Web\assets\100002\fonts\fontawesome\fonts\" />
     <Folder Include="css\Web\assets\100002\js\bootstrap\css\github.com\necolas\" />
     <Folder Include="css\Web\hstatic.net\817\1000069817\1000098314\" />
+    <Folder Include="css\Web\Scripts\addthis\" />
     <Folder Include="css\Web\Uploads\shop2198\images\banner\" />
     <Folder Include="css\Web\Uploads\shop2198\images\news\" />
-    <Folder Include="pic\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -97,3 +97,36 @@ C:\Users\ASUS\Desktop\New folder\vatlieuxaydung\VLXD\VLXD\bin\Microsoft.CodeDom.
 C:\Users\ASUS\Desktop\New folder\vatlieuxaydung\VLXD\VLXD\obj\Debug\VLXD.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\New folder\vatlieuxaydung\VLXD\VLXD\obj\Debug\VLXD.dll
 C:\Users\ASUS\Desktop\New folder\vatlieuxaydung\VLXD\VLXD\obj\Debug\VLXD.pdb
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\ApplicationInsights.config
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\VLXD.dll.config
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\VLXD.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\VLXD.pdb
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.Web.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.Web.xml
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ASUS\Desktop\VLXD\VLXD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\VLXD\VLXD\obj\Debug\VLXD.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\VLXD\VLXD\obj\Debug\VLXD.dll
+C:\Users\ASUS\Desktop\VLXD\VLXD\obj\Debug\VLXD.pdb

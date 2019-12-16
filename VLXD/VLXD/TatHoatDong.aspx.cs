@@ -32,19 +32,11 @@ namespace VLXD.Admin.TaiKhoan
         }
 
         private void tatHoatDong(string ma) {
-            if (ma.Equals("1"))
+            string query = "UPDATE NguoiDung SET HoatDong = 0 WHERE ID = '"+ma+"'";
+            TaiKhoanDAO tkDao = new TaiKhoanDAO();
+            if (tkDao.update(query))
             {
-                Response.Write("<script>alert('Không thể off!');</script>");
-
-            }
-            else
-            {
-                string query = "UPDATE NguoiDung SET HoatDong = 0 WHERE ID = '" + ma + "'";
-                TaiKhoanDAO tkDao = new TaiKhoanDAO();
-                if (tkDao.update(query))
-                {
-                    Response.Redirect("TrangAdmin.aspx?modul=TaiKhoan&modul1=DSTK");
-                }
+                Response.Redirect("TrangAdmin.aspx?modul=TaiKhoan&modul1=DSTK");
             }
         }
         private void tathoatdongloaisp(int ma){

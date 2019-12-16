@@ -13,13 +13,13 @@ namespace VLXD.BanHang.SanPham {
     public partial class SanPham {
         
         /// <summary>
-        /// lblDSSP control.
+        /// PlaceHolder1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDSSP;
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
         
         /// <summary>
         /// lblDMSP control.
@@ -29,5 +29,14 @@ namespace VLXD.BanHang.SanPham {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDMSP;
+        
+        /// <summary>
+        /// lblSPHot control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSPHot;
     }
 }
