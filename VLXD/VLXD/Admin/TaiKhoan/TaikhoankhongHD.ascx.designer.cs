@@ -7,19 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VLXD.Admin.SanPham {
+namespace VLXD.Admin.TaiKhoan {
     
     
-    public partial class NhatKySP {
-        
-        /// <summary>
-        /// btnThem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnThem;
+    public partial class TaikhoankhongHD {
         
         /// <summary>
         /// lblTr control.

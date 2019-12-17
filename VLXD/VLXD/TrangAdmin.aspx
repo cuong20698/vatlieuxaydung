@@ -101,6 +101,7 @@
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Danh mục tài khoản:</h6>
                         <a class="dropdown-item" href="TrangAdmin.aspx?modul=TaiKhoan&modul1=DSTK">Danh sách tài khoản</a>
+                        <a class="dropdown-item" href="TrangAdmin.aspx?modul=TaiKhoan&modul1=TKKHD">DSTK ngừng hoạt động</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -139,12 +140,12 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                         <h6 class="dropdown-header">Danh mục doanh thu:</h6>
-                        <a class="dropdown-item" href="login.html">Thống kê doanh thu</a>
+                        <a class="dropdown-item" href="#">Thống kê doanh thu</a>
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Danh mục báo cáo:</h6>
-                        <a class="dropdown-item" href="login.html">Báo cáo tháng</a>
-                        <a class="dropdown-item" href="login.html">Báo cáo quý</a>
-                        <a class="dropdown-item" href="login.html">Báo cáo năm</a>
+                        <a class="dropdown-item" href="#">Báo cáo tháng</a>
+                        <a class="dropdown-item" href="#">Báo cáo quý</a>
+                        <a class="dropdown-item" href="#">Báo cáo năm</a>
                     </div>
                 </li>
             </ul>

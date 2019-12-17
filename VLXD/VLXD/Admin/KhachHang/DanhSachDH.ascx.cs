@@ -11,7 +11,6 @@ namespace VLXD.Admin.KhachHang
 {
     public partial class DanhSachDH : System.Web.UI.UserControl
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
             loadDSDH();
@@ -32,8 +31,9 @@ namespace VLXD.Admin.KhachHang
                     <td>" + dt.Rows[i]["NgayLap"].ToString() + @"</td>
                     <td>" + dt.Rows[i]["NgayGiao"].ToString() + @"</td>
                     <td>
-                        <a onClick='alert('cgfhhgfty');' href = 'TrangAdmin.aspx?modul=KhachHang&modul1=CTDH&MaDH=" + dt.Rows[i]["ID"].ToString() + @"'>Chi tiết</a> | 
-                        <a href = 'GiaoHang.aspx?Ma=" + dt.Rows[i]["ID"].ToString() + @"'>Giao</a>
+                        <a href = '/TrangAdmin.aspx?modul=KhachHang&modul1=CTDH&MaDH=" 
+                          + dt.Rows[i]["ID"].ToString() + @"'>Chi tiết</a> | 
+                        <a onclick='return Giao();' href = 'GiaoHang.aspx?Ma=" + dt.Rows[i]["ID"].ToString() + @"'>Giao</a>
                     </td>
                 </tr>    
                 ");

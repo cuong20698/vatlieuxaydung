@@ -15,10 +15,10 @@ namespace VLXD.Admin.SanPham
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            loadDSTK();
+            loadDSLSP();
         }
         
-        private void loadDSTK()
+        private void loadDSLSP()
         {
             DanhMucSPDAO tkDao = new DanhMucSPDAO();
             DataTable dt = tkDao.getTable();
@@ -30,8 +30,7 @@ namespace VLXD.Admin.SanPham
                     <td>" + dt.Rows[i]["ID"].ToString() + @"</td>
                     <td>" + dt.Rows[i]["Name"].ToString() + @"</td>
                     <td>
-                        <a onClick='alert('cgfhhgfty');' href = '/TatHoatDong.aspx?MaLoaiSP=" + dt.Rows[i]["ID"].ToString() + @"'>Xóa</a>
-                        <a href = 'SuaSP.aspx?MaSP=" + dt.Rows[i]["ID"].ToString() + @"'>Sửa</a>
+                        <a onclick='return Xoa();' href = '/TatHoatDong.aspx?MaLoaiSP=" + dt.Rows[i]["ID"].ToString() + @"'>Xóa</a>
                     </td>
                 </tr>    
                 ");

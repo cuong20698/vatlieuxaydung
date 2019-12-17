@@ -107,6 +107,7 @@
     <Content Include="Admin\TaiKhoan\ChiTietTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DanhSachTaiKhoan.ascx" />
     <Content Include="Admin\TaiKhoan\DoiMatKhau.ascx" />
+    <Content Include="Admin\TaiKhoan\TaikhoankhongHD.ascx" />
     <Content Include="BanHang\BanHangUserControl.ascx" />
     <Content Include="BanHang\GioHang\DanhSachDH.ascx" />
     <Content Include="BanHang\GioHang\GioHang.ascx" />
@@ -500,6 +501,13 @@
     </Compile>
     <Compile Include="Admin\TaiKhoan\DoiMatKhau.ascx.designer.cs">
       <DependentUpon>DoiMatKhau.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TaiKhoan\TaikhoankhongHD.ascx.cs">
+      <DependentUpon>TaikhoankhongHD.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TaiKhoan\TaikhoankhongHD.ascx.designer.cs">
+      <DependentUpon>TaikhoankhongHD.ascx</DependentUpon>
     </Compile>
     <Compile Include="BanHang\BanHangUserControl.ascx.cs">
       <DependentUpon>BanHangUserControl.ascx</DependentUpon>
