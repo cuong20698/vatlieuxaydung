@@ -74,10 +74,15 @@
         <table class="table table-bordered" id="dataTable" style="width: 100%;">
             <tr>
                 <th>ID</th>
-                <th>Loại vật liệu</th>
+                <th>Loại sản phẩm</th>
                 <th></th>
             </tr>
             <asp:Label ID="lblTr" runat="server" Text=""></asp:Label>
         </table>
     </div>
 </div>
+<script>
+    function Xoa() {
+        return confirm("Bạn có chắc chắn muốn xóa loại sản phẩm này này?");;
+    }
+</script>

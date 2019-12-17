@@ -35,6 +35,7 @@
         outline:none;
         background-color: #006d6d;
         color:white;
+        float:right;
     }
     .form-submit:hover{
         background-color:#014242;
@@ -85,3 +86,8 @@
         </table>
     </div>
 </div>
+<script>
+    function Xoa() {
+        return confirm("Bạn có chắc chắn muốn xóa sản phẩm này này?");;
+    }
+</script>

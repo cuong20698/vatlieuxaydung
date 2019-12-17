@@ -20,3 +20,8 @@
         </table>
     </div>
 </div>
+<script>
+    function Giao() {
+        return confirm("Xác nhận giao đơn hàng!");;
+    }
+</script>

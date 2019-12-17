@@ -60,8 +60,14 @@ namespace VLXD
                 case "DMSP":
                     lblLink2.Text = "Danh sách loại sản phẩm";
                     break;
+                case "TKKHD":
+                    lblLink2.Text = "Tài khoản không hoạt động";
+                    break;
                 case "DSSP":
                     lblLink2.Text = "Danh sách sản phẩm";
+                    break;
+                case "NKSP":
+                    lblLink2.Text = "Nhật kí sản phẩm";
                     break;
                 case "ThemSP":
                     lblLink2.Text = "Thêm sản phẩm";

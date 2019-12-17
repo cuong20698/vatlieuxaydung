@@ -26,6 +26,9 @@ namespace VLXD.Admin
                 case "DSTK":
                     PlaceHolder1.Controls.Add(LoadControl("TaiKhoan/DanhSachTaiKhoan.ascx"));
                     break;
+                case "TKKHD":
+                    PlaceHolder1.Controls.Add(LoadControl("TaiKhoan/TaikhoankhongHD.ascx"));
+                    break;
                 case "DoiMK":
                     PlaceHolder1.Controls.Add(LoadControl("TaiKhoan/DoiMatKhau.ascx"));
                     break;
@@ -52,6 +55,8 @@ namespace VLXD.Admin
                     break;
                 case "NKSP":
                     PlaceHolder1.Controls.Add(LoadControl("SanPham/NhatKySP.ascx"));
+                    break;
+                default: PlaceHolder1.Controls.Add(LoadControl("TaiKhoan/DanhSachTaiKhoan.ascx"));
                     break;
             }
         }
