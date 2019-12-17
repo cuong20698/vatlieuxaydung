@@ -49,7 +49,17 @@ namespace VLXD.DAO
                 return dt;
             }
         }
-
+        public DataTable getTable1(string query)
+        {
+            using (SqlConnection conn = new SqlConnection(connectString))
+            {
+                conn.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+            }
+        }
         public bool insert(SP sp)
         {
 

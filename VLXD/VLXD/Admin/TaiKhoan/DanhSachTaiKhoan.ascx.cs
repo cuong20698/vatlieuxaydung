@@ -23,12 +23,11 @@ namespace VLXD.Admin.TaiKhoan
             StringBuilder sb = new StringBuilder();
             string off = "";
             int kt = (int)Session["idgroup"];
-            if(kt == 1)
+            if (kt == 1)
             {
-                off = "<a onclick='return Xoa();' href = '/TatHoatDong.aspx?ma=" + dt.Rows[0]["ID"].ToString() + @"'>Off</a>";
-            }
-            for (int i = 0; i < dt.Rows.Count; i++) {
-                sb.Append(@"
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    sb.Append(@"
                 <tr>
                     <td>" + dt.Rows[i]["ID"].ToString() + @"</td>
                     <td>" + dt.Rows[i]["UserName"].ToString() + @"</td>
@@ -37,10 +36,30 @@ namespace VLXD.Admin.TaiKhoan
                     <td>" + dt.Rows[i]["SDT"].ToString() + @"</td>
                     <td>" + dt.Rows[i]["IDGroup"].ToString() + @"</td>
                     <td>
-                       "+off+@" 
+                      <a onClick='return xoa();' href = '/TatHoatDong.aspx?ma=" + dt.Rows[i]["ID"].ToString() + @"'>Xóa</a>
                     </td>
                 </tr>    
-                "); 
+                ");
+                }
+            }
+            else
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    sb.Append(@"
+                <tr>
+                    <td>" + dt.Rows[i]["ID"].ToString() + @"</td>
+                    <td>" + dt.Rows[i]["UserName"].ToString() + @"</td>
+                    <td>" + dt.Rows[i]["Email"].ToString() + @"</td>
+                    <td>" + dt.Rows[i]["DiaChi"].ToString() + @"</td>
+                    <td>" + dt.Rows[i]["SDT"].ToString() + @"</td>
+                    <td>" + dt.Rows[i]["IDGroup"].ToString() + @"</td>
+                    <td>
+                       " + off + @"
+                    </td>
+                </tr>    
+                ");
+                }
             }
             lblTr.Text = sb.ToString();
         }
