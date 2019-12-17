@@ -5,19 +5,19 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using VLXD.DAO;
-
+using System.Data;
 namespace VLXD.Admin.TaiKhoan
 {
     public partial class TatHoatDong : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string ma = "";
             if (Request.QueryString["ma"] != null)
             {
-                ma = Request.QueryString["ma"];
+               string ma = Request.QueryString["ma"];
+               tatHoatDong(ma);
             }
-            tatHoatDong(ma);
+            
             
             if(Request.QueryString["MaLoaiSP"]!=null)
             {
@@ -34,10 +34,21 @@ namespace VLXD.Admin.TaiKhoan
         private void tatHoatDong(string ma) {
             string query = "UPDATE NguoiDung SET HoatDong = 0 WHERE ID = '"+ma+"'";
             TaiKhoanDAO tkDao = new TaiKhoanDAO();
-            if (tkDao.update(query))
-            {
-                Response.Redirect("TrangAdmin.aspx?modul=TaiKhoan&modul1=DSTK");
-            }
+           DataTable dt = tkDao.getTable("select * from NguoiDung where ID='"+ma+"'");
+           int id = int.Parse(dt.Rows[0]["IDGroup"].ToString());
+           if (id == 1)
+           {
+               Response.Write("<script>alert </script>");  
+
+           }
+           else
+           {
+
+               if (tkDao.update(query))
+               {
+                   Response.Redirect("TrangAdmin.aspx?modul=TaiKhoan&modul1=DSTK");
+               }
+           }
         }
         private void tathoatdongloaisp(int ma){
             string query = "UPDATE DanhMucSP SET HoatDong = 0 WHERE ID = '"+ma+"'";

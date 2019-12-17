@@ -11,7 +11,6 @@
                 <th>ID</th>
                 <th>Username</th>
                 <th>Tên khách hàng</th>
-                <th>Ghi chú</th>
                 <th>Email</th>
                 <th>SDT</th>
                 <th>Địa chỉ</th>

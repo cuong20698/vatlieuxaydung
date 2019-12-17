@@ -13,15 +13,6 @@ namespace VLXD.Admin.SanPham {
     public partial class ThemSP {
         
         /// <summary>
-        /// imgSP control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgSP;
-        
-        /// <summary>
         /// txtMaSP control.
         /// </summary>
         /// <remarks>
@@ -58,24 +49,6 @@ namespace VLXD.Admin.SanPham {
         protected global::System.Web.UI.WebControls.FileUpload fUpload;
         
         /// <summary>
-        /// btnUpFile control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUpFile;
-        
-        /// <summary>
-        /// txtsp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtsp;
-        
-        /// <summary>
         /// txtMota control.
         /// </summary>
         /// <remarks>
@@ -94,13 +67,13 @@ namespace VLXD.Admin.SanPham {
         protected global::System.Web.UI.WebControls.DropDownList ddrloai;
         
         /// <summary>
-        /// Button1 control.
+        /// btnthemmoi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnthemmoi;
         
         /// <summary>
         /// lbThongBao control.
