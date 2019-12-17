@@ -41,5 +41,10 @@ namespace VLXD.Admin.SanPham
             }
             lblTr.Text = sb.ToString();
         }
+
+        protected void btnThem_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("TrangAdmin.aspx?modul=SanPham&modul1=ThemSP");
+        }
     }
 }

@@ -113,8 +113,9 @@
                         <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=DMSP">Danh sách loại SP</a>
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Danh mục sản phẩm:</h6>
-                        <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=DSSP">Danh sách sản phẩm</a>
                         <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=ThemSP">Thêm sản phẩm</a>
+                        <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=DSSP">Danh sách sản phẩm</a>
+                        <a class="dropdown-item" href="TrangAdmin.aspx?modul=SanPham&modul1=NKSP">Nhật ký sản phẩm</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

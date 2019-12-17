@@ -50,6 +50,9 @@ namespace VLXD.Admin
                 case "CTDH":
                     PlaceHolder1.Controls.Add(LoadControl("KhachHang/ChiTietDH.ascx"));
                     break;
+                case "NKSP":
+                    PlaceHolder1.Controls.Add(LoadControl("SanPham/NhatKySP.ascx"));
+                    break;
             }
         }
     }
