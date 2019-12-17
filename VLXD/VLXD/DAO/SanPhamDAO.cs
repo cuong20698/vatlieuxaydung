@@ -40,7 +40,7 @@ namespace VLXD.DAO
         }
         public DataTable getTable()
         {
-            string query = @"SELECT * FROM SanPham where HoatDong=1";
+            string query = @"SELECT * FROM SanPham where HoatDong = 1";
             using (SqlConnection conn = new SqlConnection(connectString)) {
                 conn.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);

@@ -115,6 +115,11 @@
     <Content Include="BanHang\SanPham\DanhSachSanPham.ascx" />
     <Content Include="BanHang\SanPham\DanhSachSanPhamLoai.ascx" />
     <Content Include="BanHang\SanPham\SanPham.ascx" />
+    <Content Include="BanHang\TaiKhoan\DangKy.ascx" />
+    <Content Include="BanHang\TaiKhoan\DangNhap.ascx" />
+    <Content Include="BanHang\TaiKhoan\DoiMK.ascx" />
+    <Content Include="BanHang\TaiKhoan\QuenMK.ascx" />
+    <Content Include="BanHang\TaiKhoan\TaiKhoan.ascx" />
     <Content Include="BanHang\TrangChu.ascx" />
     <Content Include="css\Web\app\appMain.js" />
     <Content Include="css\Web\app\controllers\moduleController.js" />
@@ -548,6 +553,41 @@
     <Compile Include="BanHang\SanPham\SanPham.ascx.designer.cs">
       <DependentUpon>SanPham.ascx</DependentUpon>
     </Compile>
+    <Compile Include="BanHang\TaiKhoan\DangKy.ascx.cs">
+      <DependentUpon>DangKy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\DangKy.ascx.designer.cs">
+      <DependentUpon>DangKy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\DangNhap.ascx.cs">
+      <DependentUpon>DangNhap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\DangNhap.ascx.designer.cs">
+      <DependentUpon>DangNhap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\DoiMK.ascx.cs">
+      <DependentUpon>DoiMK.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\DoiMK.ascx.designer.cs">
+      <DependentUpon>DoiMK.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\QuenMK.ascx.cs">
+      <DependentUpon>QuenMK.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\QuenMK.ascx.designer.cs">
+      <DependentUpon>QuenMK.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\TaiKhoan.ascx.cs">
+      <DependentUpon>TaiKhoan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BanHang\TaiKhoan\TaiKhoan.ascx.designer.cs">
+      <DependentUpon>TaiKhoan.ascx</DependentUpon>
+    </Compile>
     <Compile Include="BanHang\TrangChu.ascx.cs">
       <DependentUpon>TrangChu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -556,6 +596,8 @@
       <DependentUpon>TrangChu.ascx</DependentUpon>
     </Compile>
     <Compile Include="DAO\DonHangDAO.cs" />
+    <Compile Include="DAO\KhachHangDAO.cs" />
+    <Compile Include="DAO\XuLy.cs" />
     <Compile Include="GiaoHang.aspx.cs">
       <DependentUpon>GiaoHang.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

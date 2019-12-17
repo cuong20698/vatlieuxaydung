@@ -20,7 +20,7 @@ namespace VLXD.BanHang.SanPham
         private void loadDS()
         {
             string giaKM = "";
-            string query = "SELECT * FROM SanPham,DanhMucSP WHERE SanPham.LoaiSP = DanhMucSP.Name and DanhMucSP.ID = " + Request.QueryString["ma"] + "";
+            string query = "SELECT * FROM SanPham,DanhMucSP WHERE SanPham.LoaiSP = DanhMucSP.Name and DanhMucSP.ID = " + Request.QueryString["ma"] + " and SanPham.HoatDong = 1";
             SanPhamDAO spDao = new SanPhamDAO();
             DataTable dt = spDao.getTableSP(query);
             StringBuilder sb = new StringBuilder();
