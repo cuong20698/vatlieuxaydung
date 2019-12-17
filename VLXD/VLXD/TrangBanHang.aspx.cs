@@ -16,6 +16,7 @@ namespace VLXD
         {
             loadSLDH();
             loadDMSP();
+            loadBtnUser();
             taoDH();
         }
         private void loadDMSP() {
@@ -44,7 +45,7 @@ namespace VLXD
                 dt.Columns.Add("HinhAnh");
                 dt.Columns.Add("SoLuong");
                 dt.Columns.Add("DonGia");
-                dt.Columns.Add("DVT");
+                dt.Columns.Add("DVT");                
                 dt.Columns.Add("ThanhTien");
                 Session["giohang"] = dt;
             }
@@ -59,6 +60,21 @@ namespace VLXD
             {
                 DataTable dt = (DataTable)Session["giohang"];
                 lblSLDH.Text = dt.Rows.Count.ToString();
+            }
+        }
+
+        private void loadBtnUser()
+        {
+            if (Session["KH"] != null)
+            {
+                lblUser.Text = @"
+                        <li class='account-login'><a href='/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=TTTK'><i class='glyphicon glyphicon-user'></i>" + Session["KH"].ToString()+ @"</a></li>
+                        <li class='account-register'><a href = '/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=DX'><i class='glyphicon glyphicon-log-out'></i>Đăng xuất</a></li>";
+            }else
+            {
+                lblUser.Text = @"
+                        <li class='account-login'><a href='/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=DN'><i class='fa fa-sign-in'></i>Đăng nhập </a></li>
+                        <li class='account-register'><a href ='/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=DK'><i class='fa fa-key'></i>Đăng ký</a></li>";
             }
         }
     }

@@ -10,33 +10,42 @@
 namespace VLXD.BanHang.TaiKhoan {
     
     
-    public partial class TaiKhoan {
+    public partial class ThongTinTaiKhoan {
         
         /// <summary>
-        /// lblMenu control.
+        /// lblNguoiNhan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMenu;
+        protected global::System.Web.UI.WebControls.Label lblNguoiNhan;
         
         /// <summary>
-        /// lblDM control.
+        /// lblSDT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDM;
+        protected global::System.Web.UI.WebControls.Label lblSDT;
         
         /// <summary>
-        /// PlaceHolder1 control.
+        /// lblEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
+        protected global::System.Web.UI.WebControls.Label lblEmail;
+        
+        /// <summary>
+        /// lblDiaChi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDiaChi;
     }
 }

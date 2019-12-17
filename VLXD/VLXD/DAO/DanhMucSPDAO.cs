@@ -12,14 +12,22 @@ namespace VLXD.DAO
     public class DanhMucSPDAO
     {
         string connectString = ConfigurationManager.ConnectionStrings["MyShop"].ConnectionString;
-        public bool checkUser(string username)
+        public DataTable checkID(int id)
         {
-            throw new NotImplementedException();
+            string query = @"SELECT * FROM DanhMucSP where ID="+id+" and HoatDong=1";
+            using (SqlConnection conn = new SqlConnection(connectString))
+            {
+                conn.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+            }
         }
 
         public bool delete(long id)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException();    
         }
 
         public DataSet getDataSet()

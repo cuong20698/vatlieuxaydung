@@ -36,7 +36,10 @@ namespace VLXD.Admin.SanPham
             string hinhanh = fUpload.FileName.ToString();
             string mota = txtMota.Value;
             string loaisp = ddrloai.SelectedValue.ToString();
-            SP sp = new SP(masp, tensp, gia, hinhanh,false, mota, loaisp);
+            string dvt = "";
+            double giaKM = 0;
+            int soluong = 0;
+            SP sp = new SP(masp, tensp, gia, dvt, hinhanh, mota, giaKM, soluong, loaisp, true, false, false);
             return sp;
         }
 

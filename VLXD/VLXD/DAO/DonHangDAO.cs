@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using VLXD.Entity;
 
 namespace VLXD.DAO
 {
@@ -13,6 +14,17 @@ namespace VLXD.DAO
         private string connectString = ConfigurationManager.ConnectionStrings["MyShop"].ConnectionString;
         public DonHangDAO() { }
 
+        public bool checkID(int id)
+        {
+            string query = "SELECT COUNT(*) FROM DonHang";
+            using (SqlConnection conn = new SqlConnection(connectString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int result = cmd.ExecuteNonQuery();
+                return (result >= 1);
+            }
+        }
         public DataTable getTable()
         {
             string query = "SELECT * FROM DonHang";
@@ -44,9 +56,28 @@ namespace VLXD.DAO
             throw new NotImplementedException();
         }
 
-        public bool insert(Entity.NguoiDung nd)
+        public bool insertDH(DonHang dh)
         {
-            throw new NotImplementedException();
+            string query = "INSERT INTO DonHang VALUES ("+dh.maDH+","+dh.maKH+ "," + dh.thanhTien + ",0,'" + dh.ngayLap+"', null)";
+            using(SqlConnection conn = new SqlConnection(connectString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int result = cmd.ExecuteNonQuery();
+                return (result >= 1);
+            }
+        }
+
+        public bool insertCTDH(ChiTietDonHang dh)
+        {
+            string query = "INSERT INTO ChiTietDonHang VALUES (N'"+dh.tenSP+"','"+dh.hinhAnh+"'," + dh.soLuong + "," + dh.donGia + "," + dh.thanhTien + ", " + dh.maDH + ")";
+            using (SqlConnection conn = new SqlConnection(connectString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(query, conn);
+                int result = (int)cmd.ExecuteScalar();
+                return (result >= 1);
+            }
         }
 
         public bool delete(long id)

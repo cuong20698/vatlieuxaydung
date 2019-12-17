@@ -79,7 +79,7 @@
     <link href="../css/Web/css/style.css" rel="stylesheet" type="text/css" />
     <link href="../css/Web/css/responsive.css" rel="stylesheet" type="text/css" />
 </head>
-<body ng-app="appMain" style="" class="home option2">
+<body class="home option2">
     <div class="wrapper page-home">
         <div id="header" class="header">
             <section class="top-link clearfix">
@@ -92,8 +92,7 @@
                             <ul class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm">
                                 <li class="order-check"><a href="/kiem-tra-don-hang.html"><i class="fa fa-pencil-square-o"></i>Kiểm tra đơn hàng</a></li>
                                 <li class="order-cart"><a href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH&modul2=DSDH"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a></li>
-                                <li class="account-login"><a href="/dang-nhap.html"><i class="fa fa-sign-in"></i>Đăng nhập </a></li>
-                                <li class="account-register"><a href="/dang-ky.html"><i class="fa fa-key"></i>Đăng ký </a></li>
+                                <asp:Label class="nav navbar-nav navbar-right topmenu  hidden-xs hidden-sm" ID="lblUser" runat="server" Text=""></asp:Label>
                             </ul>
                             <div class="show-mobile hidden-lg hidden-md">
                                 <div class="quick-user">
@@ -103,10 +102,10 @@
                                     <div class="inner-toggle">
                                         <ul class="login links">
                                             <li>
-                                                <a href="/dang-ky.html"><i class="fa fa-sign-in"></i>Đăng ký</a>
+                                                <a href="/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=DK"><i class="fa fa-sign-in"></i>Đăng ký</a>
                                             </li>
                                             <li>
-                                                <a href="/dang-nhap.html"><i class="fa fa-key"></i>Đăng nhập</a>
+                                                <a href="/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=DN"><i class="fa fa-key"></i>Đăng nhập</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -140,8 +139,7 @@
                         <div class="search-box">
                             <form class="search form-inline">
                                 <div class="form-group input-serach">
-                                    <input type="text" name="search" class="search_box" id="txtsearch" onblur="if(this.value=='')this.value='Nhập từ khóa tìm kiếm...'"
-                                        onfocus="if(this.value=='Nhập từ khóa tìm kiếm...')this.value=''" value="Nhập từ kh&#243;a t&#236;m kiếm..." />
+                                    <input type="text" name="search" class="search_box" id="txtsearch" value="Nhập từ khóa tìm kiếm..." />
                                 </div>
                                 <button id="btnsearch" class="pull-right btn-search">
                                     <span class="hidden-400">Tìm kiếm</span>
@@ -151,7 +149,7 @@
                         </div>
                     </div>
                     <div class="col-xs-5 col-sm-2 group-button-header new-login">
-                        <a title="Đăng nhập" href="/dang-nhap.html" class="btn-heart"></a>
+                        <a title="Tài khoản" href="/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=TTTK" class="btn-heart"></a>
                         <div class="btn-cart" id="cart-block">
                             <a title="My cart" href="/TrangBanHang.aspx?modul=TrangChu&modul1=GH&modul2=DSDH">Giỏ hàng</a>
                             <span class="text-show">Giỏ hàng</span>

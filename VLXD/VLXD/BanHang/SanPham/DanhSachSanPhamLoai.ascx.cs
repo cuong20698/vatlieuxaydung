@@ -21,7 +21,10 @@ namespace VLXD.BanHang.SanPham
         {
             string giaKM = "";
             string query = "SELECT * FROM SanPham,DanhMucSP WHERE SanPham.LoaiSP = DanhMucSP.Name and DanhMucSP.ID = " + Request.QueryString["ma"] + " and SanPham.HoatDong = 1";
+            string tv = "SELECT * FROM DanhMucSP ID = " + Request.QueryString["ma"] + " and SanPham.HoatDong = 1";
             SanPhamDAO spDao = new SanPhamDAO();
+            DanhMucSPDAO dmDao = new DanhMucSPDAO();
+            DataTable ktLoai = dmDao.checkID(int.Parse(Request.QueryString["ma"].ToString()));
             DataTable dt = spDao.getTableSP(query);
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -63,8 +66,8 @@ namespace VLXD.BanHang.SanPham
             ");
             }
 
-            lblTenLoai1.Text = dt.Rows[0]["Name"].ToString();
-            lblTenLoai2.Text = dt.Rows[0]["Name"].ToString();
+            lblTenLoai1.Text = ktLoai.Rows[0]["Name"].ToString();
+            lblTenLoai2.Text = ktLoai.Rows[0]["Name"].ToString();
             lblDSSP.Text = sb.ToString();
         }
     }

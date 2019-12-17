@@ -30,6 +30,12 @@ namespace VLXD.BanHang
                 case "SP":
                     PlaceHolder1.Controls.Add(LoadControl("SanPham/SanPham.ascx"));
                     break;
+                case "TK":
+                    PlaceHolder1.Controls.Add(LoadControl("TaiKhoan/TaiKhoan.ascx"));
+                    break;
+                case "ThanhToan":
+                    PlaceHolder1.Controls.Add(LoadControl("GioHang/ThanhToan.ascx"));
+                    break;
                 case "CTSP":
                     PlaceHolder1.Controls.Add(LoadControl("SanPham/ChiTietSanPham.ascx"));
                     break;

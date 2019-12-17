@@ -5,15 +5,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="menu-account">
-                    <h3>
-                        <span>Tài khoản
-                        </span>
-                    </h3>
-                    <ul>
-                        <li><a href="/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=DN"><i class="fa fa-sign-in"></i>Đăng nhập</a></li>
-                        <li><a href="/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=DK"><i class="fa fa-key"></i>Đăng ký</a></li>
-                        <li><a href="/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=QuenMK"><i class="fa fa-key"></i>Quên mật khẩu</a></li>
-                    </ul>
+                    <asp:Label ID="lblMenu" runat="server" Text=""></asp:Label>
                 </div>
             </div>
             <div class="col-md-9">

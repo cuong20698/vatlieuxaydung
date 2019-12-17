@@ -8,13 +8,6 @@
             <li class="icon-li"><strong>Sản phẩm</strong> </li>
         </ul>
     </div>
-    <script type="text/javascript">
-        $(".link-site-more").hover(function () {
-            $(this).find(".s-c-n").show();
-        }, function () {
-            $(this).find(".s-c-n").hide();
-        });
-    </script>
     <div class="view-product-list">
         <h2 class="page-heading">
             <span class="page-heading-title">Sản phẩm</span>

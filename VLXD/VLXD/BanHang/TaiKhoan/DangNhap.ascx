@@ -2,7 +2,7 @@
 <div class="login-content clearfix ng-scope">
     <h1 class="page-heading"><span>Đăng nhập hệ thống</span></h1>
     <!-- ngIf: IsError -->
-    <!-- ngIf: IsSuccess -->
+    <asp:Label ID="lblTB" runat="server" Text=""></asp:Label>
     <!-- ngIf: InValid -->
     <div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12 col-xs-offset-0 col-sm-offset-0">
         <form class="form-horizontal ng-pristine ng-valid-email ng-invalid ng-invalid-required" runat="server">
@@ -18,10 +18,10 @@
                     <input type="password" id="txtMK" runat="server" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required>
                 </div>
             </div>
-            
+
             <div class="form-group">
-                <div class="col-sm-offset-4 col-sm-8">
-                    <asp:Button class="btn btn-primary" runat="server" Text="Đăng nhập" OnClick="btnDN_Click" />
+                <div class="col-sm-offset-4 col-sm-8" style="margin-left: 145px">
+                    <asp:Button class="btn btn-primary" runat="server" Text="Đăng nhập" ID="btnDN" OnClick="btnDN_Click1" />
                     <a href="/TrangBanHang.aspx?modul=TrangChu&modul1=TK&modul2=QuenMK">Quên mật khẩu?</a>
                 </div>
             </div>

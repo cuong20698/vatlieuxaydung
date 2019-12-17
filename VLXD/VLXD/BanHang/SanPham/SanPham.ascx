@@ -16,22 +16,6 @@
                             <asp:Label ID="lblDMSP" runat="server" Text=""></asp:Label>
                         </ul>
                     </div>
-                    <script type="text/javascript">
-                        $(document).ready(function () {
-                            $('.menu-product li.child .open-close').on('click', function () {
-                                $(this).removeAttr('href');
-                                var element = $(this).parent('li');
-                                if (element.hasClass('open')) {
-                                    element.removeClass('open');
-                                    element.children('ul').slideUp();
-                                }
-                                else {
-                                    element.addClass('open');
-                                    element.children('ul').slideDown();
-                                }
-                            });
-                        });
-                    </script>
                     <div id="left_column">
                         <div class="block left-module">
                             <p class="title_block">Sản phẩm Hot</p>

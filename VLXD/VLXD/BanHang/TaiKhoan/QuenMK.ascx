@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="QuenMK.ascx.cs" Inherits="VLXD.BanHang.TaiKhoan.QuenMK" %>
-<div class="foget-password-content clearfix ng-scope" ng-controller="accountController" ng-init="initController()">
+<div class="foget-password-content clearfix ng-scope">
     <h1 class="page-heading"><span>Quên mật khẩu</span></h1>
     <!-- ngIf: IsError -->
     <!-- ngIf: IsSuccess -->
@@ -12,7 +12,7 @@
     </div>
 
     <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12 col-xs-offset-0 col-sm-offset-0">
-        <form class="form-horizontal ng-pristine ng-valid-email ng-invalid ng-invalid-required" ng-submit="forgetPassword()">
+        <form class="form-horizontal ng-pristine ng-valid-email ng-invalid ng-invalid-required">
             <div class="form-group">
                 <label class="col-sm-4 control-label">Email</label>
                 <div class="col-sm-8">

@@ -34,15 +34,5 @@ namespace VLXD.Entity
             this.spNoiBat = spNoiBat;
             this.spBanChay = spBanChay;
         }
-        public SP(int maSP, string tenSP, double gia, string hinhAnh, bool spNoiBat,string moTa, string loaiSP)
-        {
-            this.maSP = maSP;
-            this.tenSP = tenSP;
-            this.hinhAnh = hinhAnh;
-            this.spNoiBat = spNoiBat;
-            this.moTa = moTa;
-            this.loaiSP = loaiSP;
-            
-        }
     }
 }

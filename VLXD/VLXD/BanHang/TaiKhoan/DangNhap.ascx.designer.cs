@@ -13,6 +13,15 @@ namespace VLXD.BanHang.TaiKhoan {
     public partial class DangNhap {
         
         /// <summary>
+        /// lblTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTB;
+        
+        /// <summary>
         /// txtTK control.
         /// </summary>
         /// <remarks>
@@ -29,5 +38,14 @@ namespace VLXD.BanHang.TaiKhoan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword txtMK;
+        
+        /// <summary>
+        /// btnDN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnDN;
     }
 }

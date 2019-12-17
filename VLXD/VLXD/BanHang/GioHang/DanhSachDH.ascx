@@ -26,6 +26,6 @@
     </div>
     <div class="text-right">
         <a class="comeback" href="/index.aspx">Tiếp tục mua hàng</a>
-        <a class="button-default" id="checkout" href="/thanh-toan.html">Tiến hành thanh toán</a>
+        <a class="button-default" id="checkout" href="/TrangBanHang.aspx?modul=TrangChu&modul1=ThanhToan">Tiến hành thanh toán</a>
     </div>
 </div>

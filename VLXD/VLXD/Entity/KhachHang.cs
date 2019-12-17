@@ -10,23 +10,25 @@ namespace VLXD.Entity
         public string userName { get; set; }
         public string passWord { get; set; }
         public string tenKH { get; set; }
-        public string ghiChu { get; set; }
+        public DateTime ngaySinh { get; set; }
+        public bool gioiTinh { get; set; }
         public string email { get; set; }
         public string sdt { get; set; }
         public string diaChi { get; set; }
-        public double tongTien { get; set; }
-        public bool daXuly { get; set; }
+        public bool hoatDong { get; set; }
 
-        public KhachHang(string userName, string passWord, string tenKH, string ghiChu, string email, string sdt, string diaChi, double tongTien, bool daXuly) {
+        public KhachHang(string userName, string passWord, string tenKH, DateTime ngaySinh, bool gioiTinh, string email, string sdt, string diaChi, bool hoatDong) {
             this.userName = userName;
             this.passWord = passWord;
             this.tenKH = tenKH;
-            this.ghiChu = ghiChu;
+            this.ngaySinh = ngaySinh;
+            this.gioiTinh = gioiTinh;
             this.email = email;
             this.sdt = sdt;
             this.diaChi = diaChi;
-            this.tongTien = tongTien;
-            this.daXuly = daXuly;
+            this.hoatDong = hoatDong;
         }
+
+        public KhachHang() { }
     }
 }
